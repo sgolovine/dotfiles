@@ -8,7 +8,6 @@ export VISUAL=vim                                                           ## u
 export EDITOR=VISUAL                                                        ## use vim instead of nano on EDITOR
 export CLICOLOR=1                                                           ## terminal highlighting
 export LSCOLORS=GxFxCxDxBxegedabagaced                                      ## color pattern for terminal highlighting
-export NVM_DIR="$HOME/dev/nvm"                                              ## node version manager
 export PATH=${PATH}:$HOME/dev/Android/Sdk/tools                             ## android tools
 export PATH=${PATH}:$HOME/dev/Android/Sdk/platform-tools                    ## android platform tools
 export PATH="$PATH:$HOME/.rvm/bin"                                          ## ruby version manager
