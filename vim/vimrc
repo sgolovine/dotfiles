@@ -32,6 +32,7 @@ set shiftwidth=2
 set shiftround
 set expandtab
 
+
 " Colorz and Themez
 set t_Co=256
 color wombat256mod
