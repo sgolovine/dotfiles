@@ -22,6 +22,9 @@ alias t-n='tmux new -s'
 ## Sourcing zsh
 alias resrc='source ~/.zshrc'
 alias cat='bat'
+## Work Locations
+alias con='cd $HOME/Work/concierge'
+
 # ================== [Functions] ==================
 
 function heyoo() {

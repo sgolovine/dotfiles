@@ -32,6 +32,8 @@ set shiftwidth=2
 set shiftround
 set expandtab
 
+" fix backspacing
+set backspace=indent,eol,start
 
 " Colorz and Themez
 set t_Co=256
