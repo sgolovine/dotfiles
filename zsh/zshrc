@@ -7,9 +7,14 @@ DOTFILES=$HOME/.dotfiles
 source $DOTFILES/zsh/prompt.zsh
 # ================== [Shell] ==================
 # Shell customizations
-# Components on the left prompt
 MNML_PROMPT=(mnml_ssh mnml_status 'mnml_cwd 2 0' mnml_git)
-MNML_RPROMPT=()
+MNML_RPROMPT=() # Leave this empty otherwise we render default items
+# Directory colors
+# TODO: OSX Support
+eval $( dircolors -b $DOTFILES/zsh/dircolors )
+
+
+
 # ================== [Exports] ==================
 ## Top Level Exports
 export TERM='xterm-256color'
@@ -23,9 +28,9 @@ export CLICOLOR=1
 alias t-s='tmux ls'
 alias t-a='tmux attach'
 alias t-n='tmux new -s'
-## Sourcing zsh
 alias resrc='source ~/.zshrc'
 alias cat='bat'
+alias ls='ls --color'
 ## Work Locations
 alias con='cd $HOME/Work/concierge'
 
