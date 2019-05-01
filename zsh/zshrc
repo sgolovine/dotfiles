@@ -5,7 +5,11 @@
 # This might need to be changed if you have your dotfiles
 DOTFILES=$HOME/.dotfiles
 source $DOTFILES/zsh/prompt.zsh
-
+# ================== [Shell] ==================
+# Shell customizations
+# Components on the left prompt
+MNML_PROMPT=(mnml_ssh mnml_status 'mnml_cwd 2 0' mnml_git)
+MNML_RPROMPT=()
 # ================== [Exports] ==================
 ## Top Level Exports
 export TERM='xterm-256color'
