@@ -5,6 +5,7 @@
 # This might need to be changed if you have your dotfiles
 DOTFILES=$HOME/.dotfiles
 source $DOTFILES/zsh/prompt.zsh
+
 # ================== [Shell] ==================
 # Shell customizations
 MNML_PROMPT=(mnml_ssh mnml_status 'mnml_cwd 2 0' mnml_git)
@@ -21,6 +22,8 @@ else
 fi  
   
 
+# ================== [Completions] ==================
+fpath=($DOTFILES/zsh/zsh-completions $fpath)
 
 
 # ================== [Exports] ==================
