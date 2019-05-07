@@ -35,6 +35,11 @@ ln -sf .dotfiles/tmux/tmux.conf ~/.tmux.conf
 
 ## ZSH
 
+### Prerequsites
+
+bat (cat alternative): https://github.com/sharkdp/bat/releases
+(or `brew install bat` on OSX)
+
 ```bash
 
 ln -sf .dotfiles/zsh/zshrc ~/.zshrc
