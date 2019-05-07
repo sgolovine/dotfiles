@@ -3,7 +3,7 @@ module.exports = {
     updateChannel: "canary",
     fontSize: 12,
     fontFamily:
-      'Roboto Mono for Powerline, "Inconsolata for Powerline", monospace',
+      '"FuraCode Nerd Font Mono", monospace',
     fontWeight: "normal",
     cursorShape: "UNDERLINE",
     cursorBlink: true,
