@@ -8,9 +8,8 @@ module.exports = {
     showHamburgerMenu: "true",
     showWindowControls: "true",
     padding: "1px",
-    shell: "/usr/bin/zsh",
     copyOnSelect: true,
-    fontFamily: '"FuraCode Nerd Font Mono", monospace',
+    fontFamily: '"Fira Code", monospace',
   },
 
   plugins: ["hyper-seti"],
