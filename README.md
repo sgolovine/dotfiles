@@ -40,6 +40,11 @@ ln -sf .dotfiles/tmux/tmux.conf ~/.tmux.conf
 ln -sf .dotfiles/zsh/zshrc ~/.zshrc
 
 ```
+This will also install the bin/ folder (modify the zshrc source if the folder is not in ~/.dotfiles
 
 
+## Hyperterm
 
+```bash
+
+ln -sf .dotfiles/hyperterm/hyper.js ~/.hyper.js

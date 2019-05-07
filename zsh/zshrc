@@ -4,9 +4,12 @@
 # Our Dotfiles Directory
 # This might need to be changed if you have your dotfiles
 DOTFILES=$HOME/.dotfiles
-source $DOTFILES/zsh/prompt.zsh
+
+# ================== [ BIN ] ==================
+export PATH=${PATH}:$DOTFILES/bin
 
 # ================== [ SHELL ] ==================
+source $DOTFILES/zsh/prompt.zsh
 # Shell customizations
 MNML_PROMPT=(mnml_ssh mnml_status 'mnml_cwd 2 0' mnml_git)
 MNML_RPROMPT=() # Leave this empty otherwise we render default items
