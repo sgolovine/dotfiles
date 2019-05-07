@@ -77,7 +77,6 @@ case `uname` in
     # OSX
   ;;
   Linux)
-    echo "This is stuff for Linux only"
     # Linux Stuff
   ;;
 esac
