@@ -2,8 +2,6 @@ module.exports = {
   config: {
     updateChannel: "canary",
     fontSize: 12,
-    fontFamily:
-      '"FuraCode Nerd Font Mono", monospace',
     fontWeight: "normal",
     cursorShape: "UNDERLINE",
     cursorBlink: true,
@@ -11,7 +9,8 @@ module.exports = {
     showWindowControls: "true",
     padding: "1px",
     shell: "/usr/bin/zsh",
-    copyOnSelect: true
+    copyOnSelect: true,
+    fontFamily: '"FuraCode Nerd Font Mono", monospace',
   },
 
   plugins: ["hyper-seti"],
