@@ -53,3 +53,7 @@ This will also install the bin/ folder (modify the zshrc source if the folder is
 ```bash
 
 ln -sf .dotfiles/hyperterm/hyper.js ~/.hyper.js
+
+```
+
+Then go to Plugins > Update Plugins to complete installation
