@@ -1,6 +1,9 @@
 " Remap jk as leader
 inoremap jk <Esc>
 
+" no swapfile
+set noswapfile
+
 " Map :FZF to Ctrl+P
 nnoremap <silent> <C-p> :FZF<CR>
 
