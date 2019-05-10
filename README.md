@@ -57,3 +57,18 @@ ln -sf .dotfiles/hyperterm/hyper.js ~/.hyper.js
 ```
 
 Then go to Plugins > Update Plugins to complete installation
+
+## NVIM
+
+
+### On OSX
+
+```bash
+
+ln -sf ~/.dotfiles/nvim/init.vim ~/.config/nvim/init.vim
+mkdir ~/.config/nvim/autoload
+cp ~/.dotfiles/vim/vim/autoload/plug.vim ~/.config/nvim/autoload/
+
+```
+
+```
