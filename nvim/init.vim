@@ -58,7 +58,6 @@ Plug 'pangloss/vim-javascript'
 Plug 'leshill/vim-json'
 Plug 'w0rp/ale'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all'  }
-Plug 'junegunn/fzf.vim'
 
 " Typescript Integration
 Plug 'HerringtonDarkholme/yats.vim'
