@@ -62,9 +62,6 @@ Plug 'junegunn/fzf.vim'
 
 " Typescript Integration
 Plug 'HerringtonDarkholme/yats.vim'
-Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
-Plug 'Shougo/deoplete.nvim'
-Plug 'Shougo/denite.nvim'
 
 
 
