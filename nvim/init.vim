@@ -61,8 +61,11 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all'  }
 
 " Typescript Integration
 Plug 'HerringtonDarkholme/yats.vim'
-
-
+"" Doesn't currently work on OSX
+"" No idea why....
+" Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+Plug 'Shougo/deoplete.nvim'
+" Plug 'Shougo/denite.nvim'
 
 call plug#end()
 "------------------ END ----------------------
