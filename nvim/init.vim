@@ -35,6 +35,12 @@ set shiftwidth=2
 set shiftround
 set expandtab
 
+" Set a cursor line
+set cursorline
+
+" Search highlighting
+set hlsearch
+
 " fix backspacing
 set backspace=indent,eol,start
 
