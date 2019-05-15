@@ -80,8 +80,9 @@ export NVM_DIR="${HOME}/.nvm"
 #
 case `uname` in
   Darwin)
-    export PATH=${PATH}:$HOME/Library/Android/Sdk/tools
-    export PATH=${PATH}:$HOME/Library/Android/Sdk/platform-tools
+    export ANDROID_SDK_ROOT=$HOME/Library/Android/Sdk
+    export PATH=${PATH}:$ANDROID_SDK_ROOT/tools
+    export PATH=${PATH}:$ANDROID_SDK_ROOT/platform-tools
     # OSX
   ;;
   Linux)
