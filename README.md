@@ -69,6 +69,8 @@ ln -sf ~/.dotfiles/nvim/init.vim ~/.config/nvim/init.vim
 mkdir ~/.config/nvim/autoload
 cp ~/.dotfiles/vim/vim/autoload/plug.vim ~/.config/nvim/autoload/
 
+## Link COC Settings
+ln -sf ~/.dotfiles/nvim/coc-settings.json ~/.config/nvim/  
 ```
 
 ```
