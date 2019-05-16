@@ -39,6 +39,11 @@ HISTSIZE=9999
 SAVEHIST=9999
 
 # ================== [ COMPLETIONS ] ==================
+## Bash git completion (required for zsh completion)
+if [ -f $DOTFILES/zsh/git-completion.bash ]; then
+  . $DOTFILES/zsh/git-completion.bash
+fi
+## zsh completion wrapper
 fpath=($DOTFILES/zsh/zsh-completions $fpath)
 
 
