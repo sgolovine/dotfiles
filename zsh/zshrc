@@ -27,11 +27,17 @@ export LANG=en_US.UTF-8
 
 # ================== [ SHELL ] ==================
 source $DOTFILES/zsh/prompt/spaceship.zsh
-# Shell customizations
-MNML_PROMPT=(mnml_ssh mnml_status 'mnml_cwd 2 0' mnml_git)
-MNML_RPROMPT=() # Leave this empty otherwise we render default items
-MNML_MAGICENTER=() # Disable magic enter
 
+SPACESHIP_PROMPT_ORDER=(
+  time          # Time stampts section
+  dir           # Current directory section
+  git           # Git section (git_branch + git_status)
+  exec_time     # Execution time
+  line_sep      # Line break
+  exit_code     # Exit code section
+  char          # Prompt character
+)
+SPACESHIP_PROMPT_ADD_NEWLINE="false"
 
 # ================== [ LSCOLORS ] ==================
 export CLICOLOR=1
