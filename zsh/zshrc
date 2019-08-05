@@ -26,7 +26,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # ================== [ SHELL ] ==================
-source $DOTFILES/zsh/prompt.zsh
+source $DOTFILES/zsh/prompt/spaceship.zsh
 # Shell customizations
 MNML_PROMPT=(mnml_ssh mnml_status 'mnml_cwd 2 0' mnml_git)
 MNML_RPROMPT=() # Leave this empty otherwise we render default items
