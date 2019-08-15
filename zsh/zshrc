@@ -76,12 +76,22 @@ alias t-s='tmux ls'
 alias t-a='tmux attach'
 alias t-n='tmux new -s'
 alias cat='bat'
-# General Locations
-alias df='cd ~/.dotfiles'
+
+## General Locations
+alias df='cd $HOME/.dotfiles'
+alias apps='cd $HOME/MyApps'
 
 ## Work Locations
 alias con='cd $HOME/Work/concierge'
+alias conb='cd $HOME/Work/concierge_backend'
+alias dapi='cd $HOME/Work/disclosures_api'
 
+## Git
+alias ga='git add -A'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gm='git commit -m '
+alias gp='git push'
 # ================== [ FUNCTIONS ] ==================
 
 function resrc() {
