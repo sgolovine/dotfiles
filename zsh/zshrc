@@ -71,6 +71,11 @@ export CLICOLOR=1
 
 
 # ================== [ ALIASES ] ==================
+## Basic Commands
+alias cls='clear'
+alias vi='vim'
+alias l='ls'
+
 ## Tmux
 alias t-s='tmux ls'
 alias t-a='tmux attach'
