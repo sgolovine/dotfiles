@@ -1,3 +1,4 @@
+/** Hyper.js configuration */
 module.exports = {
   config: {
     updateChannel: "canary",
@@ -12,7 +13,7 @@ module.exports = {
     fontFamily: '"Fira Code", monospace',
   },
 
-  plugins: ["hyper-seti"],
+  plugins: ["hyperocean"],
 
   localPlugins: [],
 
