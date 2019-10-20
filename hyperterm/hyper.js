@@ -11,9 +11,12 @@ module.exports = {
     padding: "1px",
     copyOnSelect: true,
     fontFamily: '"Fira Code", monospace',
+    hyperStatusLine: {
+      dirtyColor: "salmon"
+    }
   },
 
-  plugins: ["hyperocean"],
+  plugins: ["hyperocean", "hypercwd"],
 
   localPlugins: [],
 
