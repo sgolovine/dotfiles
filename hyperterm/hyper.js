@@ -2,7 +2,7 @@
 module.exports = {
   config: {
     updateChannel: "canary",
-    fontSize: 12,
+    fontSize: 12.5,
     fontWeight: "normal",
     cursorShape: "UNDERLINE",
     cursorBlink: true,
@@ -10,7 +10,7 @@ module.exports = {
     showWindowControls: "true",
     padding: "1px",
     copyOnSelect: true,
-    fontFamily: '"Fira Code", monospace',
+    fontFamily: '"Office Code Pro D", monospace',
     hyperStatusLine: {
       dirtyColor: "salmon"
     }
