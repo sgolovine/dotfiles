@@ -67,7 +67,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all'  }
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'Shougo/deoplete.nvim'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
-
+Plug 'milch/vim-fastlane'
 call plug#end()
 "------------------ END ----------------------
 

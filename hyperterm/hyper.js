@@ -8,8 +8,9 @@ module.exports = {
     cursorBlink: true,
     showHamburgerMenu: "true",
     showWindowControls: "true",
-    padding: "1px",
+    padding: "3px",
     copyOnSelect: true,
+    wickedBorder: true,
     fontFamily: '"Office Code Pro D", monospace',
     hyperStatusLine: {
       dirtyColor: "salmon"
