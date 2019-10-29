@@ -104,10 +104,6 @@ alias fetch='git fetch'
 alias gst='git status'
 alias gco='git checkout'
 
-## Neovim shortcuts because typing nvim is hard
-alias vi='nvim'
-alias vim='nvim'
-alias nvim='nvim'
 
 # ================== [ FUNCTIONS ] ==================
 
