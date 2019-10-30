@@ -12,6 +12,7 @@ module.exports = {
     copyOnSelect: true,
     wickedBorder: true,
     fontFamily: '"Office Code Pro D", monospace',
+    scrollback: 99999999999,
     hyperStatusLine: {
       dirtyColor: "salmon"
     }
