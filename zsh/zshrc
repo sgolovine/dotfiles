@@ -105,6 +105,10 @@ alias gst='git status'
 alias gco='git checkout'
 
 
+## Vim
+alias nvim='vim'
+alias vi='vim'
+
 # ================== [ FUNCTIONS ] ==================
 
 function resrc() {
