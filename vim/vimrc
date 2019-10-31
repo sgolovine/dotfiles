@@ -5,6 +5,7 @@ set clipboard=unnamed
 set cursorline
 set hlsearch
 set backspace=indent,eol,start
+set number
 
 " Use spaces, not tabs
 set tabstop=2
