@@ -103,7 +103,7 @@ alias pull='git pull'
 alias fetch='git fetch'
 alias gst='git status'
 alias gco='git checkout'
-
+alias gb='git branch'
 
 ## Vim
 alias nvim='vim'
