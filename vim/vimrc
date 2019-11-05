@@ -52,13 +52,9 @@ Plug 'leshill/vim-json'
 Plug 'milch/vim-fastlane'
 Plug 'leafgarland/typescript-vim'
 
-
-
 " Linting
 Plug 'w0rp/ale'
 
-" ColorSchemes
-" Plug 'flazz/vim-colorschemes'
 
 call plug#end()
 " End Plugin Manager
