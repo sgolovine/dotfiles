@@ -104,6 +104,7 @@ alias fetch='git fetch'
 alias gst='git status'
 alias gco='git checkout'
 alias gb='git branch'
+alias gbr='git branch -r'
 
 ## Vim
 alias nvim='vim'
