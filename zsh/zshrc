@@ -1,51 +1,49 @@
 # zshrc
 # Sunny Golovine
-#
-# Our Dotfiles Directory
-# This might need to be changed if you have your dotfiles
-DOTFILES=$HOME/.dotfiles
 
-# ================== [ SECRETS ] ==================
-# This file should never be tracked by dotfiles
-# Store any keys, enviorment variables, etc here
-# This file will automatically generate the
-# secrets file at $HOME/.secrets
-# if the file does not already exist
 
+export DOTFILES=$HOME/.dotfiles
+
+
+# ===== [SESSION SPECIFIC] ========================
 if [ ! -f $HOME/.secrets ];
 then
-  echo "Could not find $HOME/.secrets, creating secrets file"
-  touch $HOME/.secrets
+    echo "Could not find $HOME/.secrets, creating secrets file"
+    touch $HOME/.secrets
 fi
+
+if [ ! -f $HOME/.work ];
+then
+    echo "Could not find $HOME/.work, creating work file"
+    touch $HOME/.work
+fi
+
 source $HOME/.secrets
-# ================== [ BIN ] ==================
+source $HOME/.work
+
+
+# ===== [BIN] =====================================
 export PATH=${PATH}:$DOTFILES/bin
 
-# ================== [ UTF-8 ] ==================
+# ===== [UTF-8] ===================================
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-# ================== [ SHELL ] ==================
+# ===== [SHELL] ===================================
 source $DOTFILES/zsh/prompt/spaceship.zsh
 
 SPACESHIP_PROMPT_ORDER=(
-  time          # Time stampts section
-  dir           # Current directory section
-  git           # Git section (git_branch + git_status)
-  exec_time     # Execution time
-  line_sep      # Line break
-  exit_code     # Exit code section
-  char          # Prompt character
+    time          # Time stampts section
+    dir           # Current directory section
+    git           # Git section (git_branch + git_status)
+    exec_time     # Execution time
+    line_sep      # Line break
+    exit_code     # Exit code section
+    char          # Prompt character
 )
 SPACESHIP_PROMPT_ADD_NEWLINE="false"
 
-# ================== [ LSCOLORS ] ==================
-export CLICOLOR=1
-export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
-
-
-# ================== [ HISTORY ] ==================
-
+# ===== [HISTORY] =================================
 # Set our history file
 HISTFILE=~/.zsh_history
 # Set our history size in memory
@@ -53,24 +51,37 @@ HISTSIZE=9999
 # Set out history file size
 SAVEHIST=9999
 
-# ================== [ COMPLETIONS ] ==================
+# ===== [COMPLETION] ==============================
 ## Bash git completion (required for zsh completion)
 if [ -f $DOTFILES/zsh/git-completion.bash ]; then
-  . $DOTFILES/zsh/git-completion.bash
+    . $DOTFILES/zsh/git-completion.bash
 fi
 ## zsh completion wrapper
 fpath=($DOTFILES/zsh/zsh-completions $fpath)
 
 
-# ================== [ EXPORTS ] ==================
-## Top Level Exports
+# ===== [EXPORTS] =================================
 export TERM='xterm-256color'
 export VISUAL=vim
 export EDITOR=VISUAL
 export CLICOLOR=1
+export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
+# ===== [PLATFORM SPECIFIC EXPORTS] ===============
+case `uname` in
+    Darwin)
+        export ANDROID_SDK_ROOT=$HOME/Library/Android/Sdk
+        export PATH=${PATH}:$ANDROID_SDK_ROOT/emulator
+        export PATH=${PATH}:$ANDROID_SDK_ROOT/tools
+        export PATH=${PATH}:$ANDROID_SDK_ROOT/platform-tools
+        # OSX
+    ;;
+    Linux)
+        # Linux Stuff
+    ;;
+esac
 
-# ================== [ ALIASES ] ==================
+# ===== [ALIASES] =================================
 ## Basic Commands
 alias cls='clear'
 alias vi='vim'
@@ -113,47 +124,23 @@ alias vi='vim'
 ## Mistakes
 alias gs='echo "Ghostscript has been remapped to ghostscript"'
 alias ghostscript='/usr/local/bin/gs'
-# ================== [ FUNCTIONS ] ==================
 
+## Config
+alias workrc='code ~/.work'
+alias secrc='code ~/.secrets'
+
+# ===== [FUNCTIONS] ===============================
 function resrc() {
-  source ~/.zshrc
-  echo "Successfully sourced updates from zshrc"
+    source ~/.zshrc
+    source ~/.secrets
+    source ~/.work
+    echo "Successfully sourced all files"
 }
 
-# ================== [ NVM ] ==================
+# ===== [NVIM] ====================================
 export NVM_DIR="${HOME}/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 
-# ================== [ ANDROID ] ==================
-# Android Related Stuff
-# Split up per OS
-#
-case `uname` in
-  Darwin)
-    export ANDROID_SDK_ROOT=$HOME/Library/Android/Sdk
-    export PATH=${PATH}:$ANDROID_SDK_ROOT/emulator
-    export PATH=${PATH}:$ANDROID_SDK_ROOT/tools
-    export PATH=${PATH}:$ANDROID_SDK_ROOT/platform-tools
-    # OSX
-  ;;
-  Linux)
-    # Linux Stuff
-  ;;
-esac
-
-
-
-
+# ===== [MISC] ====================================
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /Users/sgolovine/Work/concierge_backend/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/sgolovine/Work/concierge_backend/node_modules/tabtab/.completions/serverless.zsh
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /Users/sgolovine/Work/concierge_backend/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/sgolovine/Work/concierge_backend/node_modules/tabtab/.completions/sls.zsh
-# tabtab source for slss package
-# uninstall by removing these lines or running `tabtab uninstall slss`
-[[ -f /Users/sgolovine/Work/concierge_backend/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/sgolovine/Work/concierge_backend/node_modules/tabtab/.completions/slss.zsh
