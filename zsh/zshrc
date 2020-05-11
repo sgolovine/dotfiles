@@ -99,12 +99,6 @@ alias cat='bat'
 
 ## General Locations
 alias df='cd $HOME/.dotfiles'
-alias apps='cd $HOME/MyApps'
-
-## Work Locations
-alias con='cd $HOME/Work/concierge'
-alias conb='cd $HOME/Work/concierge_backend'
-alias dapi='cd $HOME/Work/disclosures_api'
 
 ## Git
 alias ga='git add -A'
