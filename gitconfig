@@ -1,0 +1,7 @@
+[user]
+  name = Sunny Golovine
+  email = sunny@glvn.co
+[core]
+  editor = vim
+[color]
+  ui = true
