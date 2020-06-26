@@ -69,19 +69,24 @@ export CLICOLOR=1
 # ===== [PLATFORM SPECIFIC EXPORTS] ===============
 case `uname` in
     Darwin)
+        # OSX
+
+        # Platform Specific Exports
         export ANDROID_SDK_ROOT=$HOME/Library/Android/Sdk
         export PATH=${PATH}:$ANDROID_SDK_ROOT/emulator
         export PATH=${PATH}:$ANDROID_SDK_ROOT/tools
         export PATH=${PATH}:$ANDROID_SDK_ROOT/platform-tools
         export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
-        # OSX
+
+        ## Platform Specific Aliases
+        alias mdedit='code --user-data-dir=/Users/sgolovine/mdcode/user-data --extensions-dir=/Users/sgolovine/mdcode/extensions'
     ;;
     Linux)
+        # Linux Stuff
         if [ -f $DOTFILES/zsh/dircolors ]; then
             eval $( dircolors -b $DOTFILES/zsh/dircolors )
             alias ls='ls --color'
         fi
-        # Linux Stuff
     ;;
 esac
 
@@ -128,8 +133,7 @@ alias workrc='code ~/.work'
 alias secrc='code ~/.secrets'
 
 
-## Markdown
-alias mdedit='code --user-data-dir=/Users/sgolovine/mdcode/user-data --extensions-dir=/Users/sgolovine/mdcode/extensions'
+
 
 # ===== [FUNCTIONS] ===============================
 function resrc() {
@@ -137,6 +141,12 @@ function resrc() {
     source ~/.secrets
     source ~/.work
     echo "Successfully sourced all files"
+}
+
+function feat() {
+    echo 'Creating branch'
+    git checkout -b CMNT-$1/$2
+    echo 'Branch created'
 }
 
 # ===== [NVIM] ====================================
