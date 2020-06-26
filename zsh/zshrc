@@ -127,6 +127,10 @@ alias ghostscript='/usr/local/bin/gs'
 alias workrc='code ~/.work'
 alias secrc='code ~/.secrets'
 
+
+## Markdown
+alias mdedit='code --user-data-dir=/Users/sgolovine/mdcode/user-data --extensions-dir=/Users/sgolovine/mdcode/extensions'
+
 # ===== [FUNCTIONS] ===============================
 function resrc() {
     source ~/.zshrc
