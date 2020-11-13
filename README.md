@@ -27,9 +27,9 @@ ln -sf $HOME/.dotfiles/zsh/zshrc $HOME/.zshrc
 
 ```bash
 
-ln -sf $HOME/.dotfiles/vim $HOME/.vim
+ln -sf $HOME/.dotfiles/vim/vim $HOME/.vim
 
-ln -sf $HOME/.dotfiles/vimrc $HOME/.vimrc
+ln -sf $HOME/.dotfiles/vim/vimrc $HOME/.vimrc
 
 ```
 
