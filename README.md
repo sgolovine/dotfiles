@@ -2,6 +2,17 @@
 
 🔌 My Dotfiles
 
+## Pre-req
+
+If you are on MacOS, install GNUCoreUtils first using:
+
+
+```bash
+
+brew install coreutils
+
+```
+
 ## Installation
 
 1. Clone the repository
