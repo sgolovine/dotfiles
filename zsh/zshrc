@@ -11,3 +11,6 @@ source $DOTFILES/zsh/nvm.zsh
 
 # Dir Colors
 source $DOTFILES/zsh/colors.zsh
+
+# Git completions
+source $DOTFILES/zsh/completions.zsh
