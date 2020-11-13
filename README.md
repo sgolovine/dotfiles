@@ -1,12 +1,10 @@
 # dotfiles
-🔌 My Dotfiles
 
+🔌 My Dotfiles
 
 ## Installation
 
-All commands performed in home directory. Make sure respective folders that are being simlinked to have been backed up and removed/renamed
-
-Clone the dotfiles:
+1. Clone the repository
 
 ```bash
 
@@ -14,63 +12,25 @@ git clone git@github.com:sgolovine/dotfiles.git ~/.dotfiles
 
 ```
 
-### Vim
+2. Link ZSH
 
-```bash
-ln -s .dotfiles/vim/vim ~/.vim
-ln -s .dotfiles/vim/vimrc ~/.vimrc
-
-```
-
-Run `:PlugInstall` in vim to complete installation
-
-
-## TMUX
+To link the ZSH configuration, create a symbolic link to `~/.zshrc`
 
 ```bash
 
-ln -sf .dotfiles/tmux/tmux.conf ~/.tmux.conf
+ln -sf $HOME/.dotfiles/zsh/zshrc $HOME/.zshrc
 
 ```
 
-## ZSH
 
-### Prerequsites
-
-bat (cat alternative): https://github.com/sharkdp/bat/releases
-(or `brew install bat` on OSX)
+3. Link VIM
 
 ```bash
 
-ln -sf .dotfiles/zsh/zshrc ~/.zshrc
+ln -sf $HOME/.dotfiles/vim $HOME/.vim
 
-```
-This will also install the bin/ folder (modify the zshrc source if the folder is not in ~/.dotfiles
-
-
-## Hyperterm
-
-```bash
-
-ln -sf .dotfiles/hyperterm/hyper.js ~/.hyper.js
+ln -sf $HOME/.dotfiles/vimrc $HOME/.vimrc
 
 ```
 
-Then go to Plugins > Update Plugins to complete installation
-
-## NVIM
-
-
-### On OSX
-
-```bash
-
-ln -sf ~/.dotfiles/nvim/init.vim ~/.config/nvim/init.vim
-mkdir ~/.config/nvim/autoload
-cp ~/.dotfiles/vim/vim/autoload/plug.vim ~/.config/nvim/autoload/
-
-## Link COC Settings
-ln -sf ~/.dotfiles/nvim/coc-settings.json ~/.config/nvim/  
-```
-
-```
+Then open vim an run `:PlugInstall`
