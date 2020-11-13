@@ -1,5 +1,8 @@
 export DOTFILES=$HOME/.dotfiles
 
+# Paths
+source $DOTFILES/zsh/path.zsh
+
 # Prompt
 source $DOTFILES/zsh/prompt/spaceship.zsh
 
