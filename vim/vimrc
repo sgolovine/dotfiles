@@ -55,6 +55,9 @@ Plug 'leafgarland/typescript-vim'
 " Linting
 Plug 'w0rp/ale'
 
+" Blogging Plugins
+Plug 'reedes/vim-pencil'
+
 
 call plug#end()
 " End Plugin Manager

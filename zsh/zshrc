@@ -77,7 +77,7 @@ case `uname` in
         export PATH=${PATH}:$ANDROID_SDK_ROOT/tools
         export PATH=${PATH}:$ANDROID_SDK_ROOT/platform-tools
         export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
-
+        export JAVA_HOME="/Applications/Android Studio.app/Contents/jre/jdk/Contents/Home" 
         ## Platform Specific Aliases
         alias mdedit='code --user-data-dir=/Users/sgolovine/mdcode/user-data --extensions-dir=/Users/sgolovine/mdcode/extensions'
     ;;
@@ -111,6 +111,7 @@ alias gd='git diff'
 alias gdc='git diff --cached'
 alias gc='git commit'
 alias gcm='git commit -m '
+alias gca='git commit --amend'
 alias push='git push'
 alias gp='git push'
 alias pull='git pull'
