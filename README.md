@@ -22,6 +22,15 @@ ln -sf $HOME/.dotfiles/zsh/zshrc $HOME/.zshrc
 
 ```
 
+Once linked run:
+
+```bash
+
+source ~/.zshrc
+
+```
+
+After which you will be able to run `resrc` to do the same thing
 
 3. Link VIM
 
@@ -34,3 +43,5 @@ ln -sf $HOME/.dotfiles/vim/vimrc $HOME/.vimrc
 ```
 
 Then open vim an run `:PlugInstall`
+
+
