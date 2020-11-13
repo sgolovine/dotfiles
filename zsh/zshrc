@@ -8,3 +8,6 @@ source $DOTFILES/zsh/aliases.zsh
 
 # NVM
 source $DOTFILES/zsh/nvm.zsh
+
+# Dir Colors
+source $DOTFILES/zsh/colors.zsh
