@@ -1,1 +1,10 @@
-source './aliases'
+export DOTFILES=$HOME/.dotfiles
+
+# Prompt
+source $DOTFILES/zsh/prompt/spaceship.zsh
+
+# Aliases
+source $DOTFILES/zsh/aliases.zsh
+
+# NVM
+source $DOTFILES/zsh/nvm.zsh
