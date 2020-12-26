@@ -14,6 +14,10 @@ set shiftwidth=2
 set shiftround
 set expandtab
 
+" Set a hard print width for markdown
+au BufRead,BufNewFile *.md setlocal textwidth=80
+
+
 " Airline
 let g:airline_theme='term'
 let g:airline_extensions=[]
