@@ -2,57 +2,27 @@
 
 🔌 My Dotfiles
 
-## Pre-req
-
-If you are on MacOS, install GNUCoreUtils first using:
-
+### Setup
 
 ```bash
+# Install Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-brew install coreutils
+# Clone this repo into .dotfiles
+git clone git@github.com:sgolovine/dotfiles.git
 
-```
+# Install Node.js
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 
-## Installation
-
-1. Clone the repository
-
-```bash
-
-git clone git@github.com:sgolovine/dotfiles.git ~/.dotfiles
-
-```
-
-2. Link ZSH
-
-To link the ZSH configuration, create a symbolic link to `~/.zshrc`
-
-```bash
-
-ln -sf $HOME/.dotfiles/zsh/zshrc $HOME/.zshrc
-
-```
-
-Once linked run:
-
-```bash
-
+# Link zshrc
+ln -sf ~/.dotfiles/zsh/zshrc ~/.zshrc
 source ~/.zshrc
 
-```
+# Setup VIM
+ln -sf ~/.dotfiles/vim/vimrc ~/.vimrc
+ln -sf ~/.dotfiles/vim/vim ~/.vim
 
-After which you will be able to run `resrc` to do the same thing
-
-3. Link VIM
-
-```bash
-
-ln -sf $HOME/.dotfiles/vim/vim $HOME/.vim
-
-ln -sf $HOME/.dotfiles/vim/vimrc $HOME/.vimrc
 
 ```
-
-Then open vim an run `:PlugInstall`
 
 
