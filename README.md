@@ -25,4 +25,16 @@ ln -sf ~/.dotfiles/vim/vim ~/.vim
 
 ```
 
+## Useful Links
+
+[Fira Code](https://github.com/tonsky/FiraCode)
+
+[iTerm](https://iterm2.com/)
+
+[vscode](https://code.visualstudio.com/)
+
+[1password](https://1password.com/)
+
+[firefox](https://www.mozilla.org/en-US/firefox/new/)
+
 
