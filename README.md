@@ -22,8 +22,30 @@ source ~/.zshrc
 ln -sf ~/.dotfiles/vim/vimrc ~/.vimrc
 ln -sf ~/.dotfiles/vim/vim ~/.vim
 
+```
+
+## Homebrew Formulas
+
+```bash
+
+# vscode
+brew install --cask visual-studio-code
+
+# firefox
+brew install --cask firefox
+
+# figma
+brew install --cask figma
+
+# bat (a cat alternative)
+brew install bat
+
+# pine (markdown editor)
+brew tap lukakerr/things
+brew install —cask pine
 
 ```
+
 
 ## Useful Links
 
