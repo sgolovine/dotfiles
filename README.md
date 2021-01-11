@@ -44,6 +44,12 @@ brew install bat
 brew tap lukakerr/things
 brew install —cask pine
 
+# React Native Debugger
+brew install --cask react-native-debugger
+
+# Slack
+brew install --cask slack
+
 ```
 
 
