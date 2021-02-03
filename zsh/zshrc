@@ -18,6 +18,9 @@ source $DOTFILES/zsh/colors.zsh
 # Git completions
 source $DOTFILES/zsh/completions.zsh
 
+# Andoid
+source $DOTFILES/zsh/android.zsh
+
 # We do not keep secrets in this
 # File however during init we create
 # a .secrets file and then source it
