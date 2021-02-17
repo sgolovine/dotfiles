@@ -14,8 +14,11 @@ set shiftwidth=2
 set shiftround
 set expandtab
 
-" Set a hard print width for markdown
+" Markdown settings
+" Set print width to 80
 au BufRead,BufNewFile *.md setlocal textwidth=80
+" Turn on spellchecker
+au BufRead,BufNEwFile *.md setlocal spell spelllang=en_us
 
 
 " Airline
