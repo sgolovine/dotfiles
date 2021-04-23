@@ -17,8 +17,10 @@ set expandtab
 " Markdown settings
 " Set print width to 80
 au BufRead,BufNewFile *.md setlocal textwidth=80
+au BufRead,BufNewFile *.txt setlocal textwidth=80
 " Turn on spellchecker
 au BufRead,BufNEwFile *.md setlocal spell spelllang=en_us
+au BufRead,BufNEwFile *.txt setlocal spell spelllang=en_us
 
 
 " Airline
