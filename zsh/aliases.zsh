@@ -16,3 +16,4 @@ alias gs='echo "Ghostscript has been remapped to ghostscript"'
 alias ghostscript='/usr/local/bin/gs'
 alias resrc='source ~/.zshrc && echo "Successfully Sourced zshrc"'
 alias brew-cask="brew install --cask"
+alias gbs='path-search'

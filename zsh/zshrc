@@ -21,6 +21,9 @@ source $DOTFILES/zsh/completions.zsh
 # Andoid
 source $DOTFILES/zsh/android.zsh
 
+# Functions
+source $DOTFILES/zsh/functions.zsh
+
 # We do not keep secrets in this
 # File however during init we create
 # a .secrets file and then source it
