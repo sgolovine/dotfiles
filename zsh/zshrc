@@ -1,39 +1,24 @@
 export DOTFILES=$HOME/.dotfiles
 
-# Paths
-source $DOTFILES/zsh/path.zsh
+# Add GNU Utils to Path
+PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+
+ZSH_MODULES=$DOTFILES/zsh/modules
 
 # Prompt
 source $DOTFILES/zsh/prompt/spaceship.zsh
 
-# Aliases
-source $DOTFILES/zsh/aliases.zsh
-
-# NVM
-source $DOTFILES/zsh/nvm.zsh
-
-# Dir Colors
-source $DOTFILES/zsh/colors.zsh
-
 # Git completions
-source $DOTFILES/zsh/completions.zsh
+source $DOTFILES/zsh/completions/completions.zsh
 
-# Andoid
-source $DOTFILES/zsh/android.zsh
+# ZSH Modules
+source $ZSH_MODULES/aliases.zsh
+source $ZSH_MODULES/nvm.zsh
+source $ZSH_MODULES/colors.zsh
+source $ZSH_MODULES/android.zsh
+source $ZSH_MODULES/functions.zsh
+source $ZSH_MODULES/secrets.zsh
 
-# Functions
-source $DOTFILES/zsh/functions.zsh
-
-# We do not keep secrets in this
-# File however during init we create
-# a .secrets file and then source it
-if [ ! -f $HOME/.secrets ];
-then
-    echo "Could not find $HOME/.secrets, creating secrets file"
-    touch $HOME/.secrets
-fi
-
-source $HOME/.secrets
 
 # !! IMPORTANT !!
 # When NVM installs it will automatically
