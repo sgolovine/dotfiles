@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 function path-search() {
   if [ -z "$1" ]; then
     echo "Branch not supplied"
