@@ -65,4 +65,4 @@ brew install --cask slack
 
 [firefox](https://www.mozilla.org/en-US/firefox/new/)
 
-
+[fix zsh compinit compaudit](https://stackoverflow.com/questions/13762280/zsh-compinit-insecure-directories/63447799)
