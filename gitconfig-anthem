@@ -1,0 +1,10 @@
+# Custom Git Config For Anthem Systems
+# Anthem requires that the name and email
+# Match what the user is registered with in Bitbucket.
+[user]
+    name = Golovine, Sunny
+    email = Sunny.Golovine@anthem.com
+[core]
+    editor = vim
+[color]
+    ui = true
