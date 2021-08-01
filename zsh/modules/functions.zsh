@@ -17,3 +17,10 @@ function path-search() {
   echo "Successfully checked out branch $branch"
   return 0
 }
+
+function save-notes() {
+  cd $HOME/Documents/MyNotes
+  git add -A
+  git commit -m "Updated Notes"
+  git push -u origin master
+}
