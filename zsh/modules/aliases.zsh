@@ -17,3 +17,8 @@ alias ghostscript='/usr/local/bin/gs'
 alias resrc='source ~/.zshrc && echo "Successfully Sourced zshrc"'
 alias brew-cask="brew install --cask"
 alias gbs='path-search'
+
+# Tinance Crypto Prices
+alias coins='tinance --top 10'
+alias my-coins='tinance --filter bitcoin ethereum cardano'
+
