@@ -21,3 +21,6 @@ brew "bat"
 
 # Slack
 cask "slack" 
+
+# Watchman
+brew "watchman"
