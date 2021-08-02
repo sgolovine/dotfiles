@@ -4,15 +4,46 @@
 
 ### Setup
 
+1. Install Homebrew
+
 ```bash
-# Install Homebrew
+
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-# Clone this repo into .dotfiles
-git clone git@github.com:sgolovine/dotfiles.git
+```
 
-# Install Node.js
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+2. Clone dotfiles
+
+```bash
+
+git clone git@github.com:sgolovine/dotfiles.git ~/.dotfiles
+
+```
+
+3. Install NVM (NodeJS)
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+
+# OR
+
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+
+
+```
+
+4. Install Homebrew formulas
+
+```bash
+
+# do this inside the .dotfiles directory where Brewfile is kept
+brew bundle
+
+```
+
+5. Link ZSH and VIM Config
+
+```bash
 
 # Link zshrc
 ln -sf ~/.dotfiles/zsh/zshrc ~/.zshrc
@@ -24,33 +55,9 @@ ln -sf ~/.dotfiles/vim/vim ~/.vim
 
 ```
 
-## Homebrew Formulas
+Alternatively run `linker.sh`
 
-```bash
 
-# vscode
-brew install --cask visual-studio-code
-
-# firefox
-brew install --cask firefox
-
-# figma
-brew install --cask figma
-
-# bat (a cat alternative)
-brew install bat
-
-# pine (markdown editor)
-brew tap lukakerr/things
-brew install —cask pine
-
-# React Native Debugger
-brew install --cask react-native-debugger
-
-# Slack
-brew install --cask slack
-
-```
 
 
 ## Useful Links
