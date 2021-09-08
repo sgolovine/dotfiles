@@ -19,6 +19,7 @@ source $ZSH_MODULES/android.zsh
 source $ZSH_MODULES/functions.zsh
 source $ZSH_MODULES/secrets.zsh
 
+export PATH=$ZSH_MODULES/diff-so-fancy/diff-so-fancy:$PATH
 
 # !! IMPORTANT !!
 # When NVM installs it will automatically
