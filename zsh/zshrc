@@ -3,7 +3,7 @@ ZSH_MODULES=$DOTFILES/zsh/modules
 
 # Path Exports
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-export PATH=$ZSH_MODULES/diff/diff-so-fancy:$PATH
+export PATH=$ZSH_MODULES/diff/:$PATH
 
 # Prompt
 source $DOTFILES/zsh/prompt/spaceship.zsh
