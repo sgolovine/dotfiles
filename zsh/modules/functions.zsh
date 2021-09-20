@@ -25,11 +25,16 @@ function save-notes() {
   git push -u origin master
 }
 
-function git-sync() {
+function g-sync() {
   echo "Syncing current git branch with $1"
   echo "Fetching..."
   $(which git) fetch origin $1
   echo "Pulling..."
   $(which git) pull origin $1
   echo "Completed!"
+}
+
+function g-create() {
+  $(which git) push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
+  echo "Branch created on remote"
 }
