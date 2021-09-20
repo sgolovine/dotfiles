@@ -24,3 +24,12 @@ function save-notes() {
   git commit -m "Updated Notes"
   git push -u origin master
 }
+
+function git-sync() {
+  echo "Syncing current git branch with $1"
+  echo "Fetching..."
+  $(which git) fetch origin $1
+  echo "Pulling..."
+  $(which git) pull origin $1
+  echo "Completed!"
+}
