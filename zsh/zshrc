@@ -25,7 +25,8 @@ source $ZSH_MODULES/functions.zsh
 source $ZSH_MODULES/secrets.zsh
 # Git Completions
 source $ZSH_MODULES/completions/completions.zsh
-
+# RVM
+source $ZSH_MODULES/rvm.zsh
 
 
 # !! IMPORTANT !!
@@ -33,3 +34,4 @@ source $ZSH_MODULES/completions/completions.zsh
 # Add a command to init it here
 # DO NOT COMMIT THIS CODE
 # It is done via nvm.zsh
+
