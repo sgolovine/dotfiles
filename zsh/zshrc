@@ -1,48 +1,19 @@
 export DOTFILES=$HOME/.dotfiles
 ZSH_ROOT=$DOTFILES/zsh
-ZSH_MODULES=$DOTFILES/zsh/modules
 
-
-## [ V1 ZSHRC ] ##
-
-# Prompt
-# source $DOTFILES/zsh/prompt/spaceship.zsh
-
-# ZSH Modules
-# --------------------------
-# Path Exports
-# source $ZSH_MODULES/path.zsh
-# Aliases
-# source $ZSH_MODULES/aliases.zsh
-# Colors
-# source $ZSH_MODULES/colors.zsh
-# Functions
-# source $ZSH_MODULES/functions.zsh
-# Secrets (*not committed*)
-# source $ZSH_MODULES/secrets.zsh
-# Git Completions
-# source $ZSH_MODULES/completions/completions.zsh
-
-# !! IMPORTANT !!
-# When NVM installs it will automatically
-# Add a command to init it here
-# DO NOT COMMIT THIS CODE
-# It is done via nvm.zsh
-
-##################
-
-
-## [ V2 ZSHRC ] ##
-
-# Oh my zsh git statuses
+# Git statuses - taken from oh-my-zsh
 source $ZSH_ROOT/git.zsh
 
-# Colors
+# Colors - taken from oh-my-zsh
+# Dircolors - https://github.com/trapd00r/LS_COLORS
 source $ZSH_ROOT/color.zsh
 
-
-# Prompt
+# Prompt - https://github.com/tylerreckart/hyperzsh
 source $ZSH_ROOT/prompt.zsh
 
+# Node Version Manager
+source $ZSH_ROOT/nvm.zsh
 
+# Aliases
+source $ZSH_ROOT/aliases.zsh
 ##################

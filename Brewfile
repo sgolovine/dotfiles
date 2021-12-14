@@ -27,3 +27,6 @@ brew "watchman"
 
 # Git
 brew "git"
+
+# diff-so-fancy
+brew "diff-so-fancy"
