@@ -24,3 +24,6 @@ cask "slack"
 
 # Watchman
 brew "watchman"
+
+# Git
+brew "git"

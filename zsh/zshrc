@@ -2,32 +2,25 @@ export DOTFILES=$HOME/.dotfiles
 ZSH_MODULES=$DOTFILES/zsh/modules
 
 # Path Exports
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-export PATH=$ZSH_MODULES/diff/:$PATH
+
 
 # Prompt
 source $DOTFILES/zsh/prompt/spaceship.zsh
 
-
 # ZSH Modules
 # --------------------------
+# Path Exports
+source $ZSH_MODULES/path.zsh
 # Aliases
 source $ZSH_MODULES/aliases.zsh
-# Node Version Manager
-source $ZSH_MODULES/nvm.zsh
 # Colors
 source $ZSH_MODULES/colors.zsh
-# Android Path Exports
-source $ZSH_MODULES/android.zsh
 # Functions
 source $ZSH_MODULES/functions.zsh
 # Secrets (*not committed*)
 source $ZSH_MODULES/secrets.zsh
 # Git Completions
 source $ZSH_MODULES/completions/completions.zsh
-# RVM
-source $ZSH_MODULES/rvm.zsh
-
 
 # !! IMPORTANT !!
 # When NVM installs it will automatically

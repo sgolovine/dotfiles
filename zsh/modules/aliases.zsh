@@ -19,7 +19,4 @@ alias brew-cask="brew install --cask"
 alias gbs='path-search'
 alias ls='ls --color'
 alias cat='bat'
-# Tinance Crypto Prices
-alias coins='tinance --top 10'
-alias my-coins='tinance --filter bitcoin ethereum cardano'
 
