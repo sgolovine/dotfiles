@@ -5,5 +5,4 @@ source $ZSH_ROOT/path.zsh
 source $ZSH_ROOT/git.zsh
 source $ZSH_ROOT/color.zsh
 source $ZSH_ROOT/prompt.zsh
-source $ZSH_ROOT/nvm.zsh
 source $ZSH_ROOT/aliases.zsh
