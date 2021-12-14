@@ -1,0 +1,10 @@
+[user]
+  name = Sunny Golovine
+  email = sunny@glvn.co
+[core]
+  editor = vim
+  pager = diff-so-fancy | less --tab=4 -RFX
+[interactive]
+  diffFilter = diff-so-fancy --patch
+[color]
+  ui = true
