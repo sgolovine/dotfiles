@@ -1,19 +1,9 @@
 export DOTFILES=$HOME/.dotfiles
 ZSH_ROOT=$DOTFILES/zsh
 
-# Git statuses - taken from oh-my-zsh
+source $ZSH_ROOT/path.zsh
 source $ZSH_ROOT/git.zsh
-
-# Colors - taken from oh-my-zsh
-# Dircolors - https://github.com/trapd00r/LS_COLORS
 source $ZSH_ROOT/color.zsh
-
-# Prompt - https://github.com/tylerreckart/hyperzsh
 source $ZSH_ROOT/prompt.zsh
-
-# Node Version Manager
 source $ZSH_ROOT/nvm.zsh
-
-# Aliases
 source $ZSH_ROOT/aliases.zsh
-##################
