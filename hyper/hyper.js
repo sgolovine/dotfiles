@@ -126,6 +126,9 @@ module.exports = {
     // set to true to disable auto updates
     disableAutoUpdates: false,
     // for advanced config flags please refer to https://hyper.is/#cfg
+    scrollback: 100000,
+
+    // More Scrollback
   },
   // a list of plugins to fetch and install from npm
   // format: [@org/]project[#version]

@@ -1,3 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =3
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/Users/sgolovine/.opt/doc/doc_01.md'
 let g:netrw_dirhist_3='/Users/sgolovine/.dotfiles/vim/vim'
