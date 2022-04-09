@@ -19,4 +19,4 @@ alias brew-cask="brew install --cask"
 alias gbs='path-search'
 alias ls='ls --color'
 alias cat='bat'
-
+alias pm='pnpm'
