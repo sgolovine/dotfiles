@@ -30,3 +30,6 @@ brew "git"
 
 # diff-so-fancy
 brew "diff-so-fancy"
+
+# Ungoogled Chromium
+cask "eloston-chromium"
