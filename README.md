@@ -45,9 +45,6 @@ $(which ln) -sf $HOME/.dotfiles/dircolors $HOME/.dircolors
 
 // Add the font
 "editor.fontFamily": "Fira Code",
-"editor.fontLigatures": true,
-
-// Add stylistic sets
 "editor.fontLigatures": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'"
 
 ```
