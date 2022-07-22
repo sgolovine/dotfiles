@@ -1,64 +1,78 @@
-# dotfiles
+# My Dotfiles
 
-🔌 My Dotfiles
+This repository holds my dotfiles.
 
-### Setup
+## Setup
 
-1. Install Homebrew
+```shell
+# Clone the dotfiles repo to ~/.dotfiles
+$(which git) clone git@github.com:sgolovine/dotfiles.git ~/.dotfiles
 
-```bash
+# Install Homebrew
+$(which curl) -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
 
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-```
-
-2. Clone dotfiles
-
-```bash
-
-git clone git@github.com:sgolovine/dotfiles.git ~/.dotfiles
-
-```
-
-3. Install NVM (NodeJS)
-
-```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-
-# OR
-
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-
-
-```
-
-4. Install Homebrew formulas
-
-```bash
-
-# do this inside the .dotfiles directory where Brewfile is kept
+# Install MacOS Apps
+# for this step you must be in the dotfiles directory
+# this step must be performed prior to linking the zsh config.
+cd ~/.dotfiles
 brew bundle
 
+# Link zsh Config
+$(which ln) -sf $HOME/.dotfiles/zsh/zshrc $HOME/.zshrc
+
+# Link vim config
+$(which ln) -sf $HOME/.dotfiles/vim/vim $HOME/.vim
+$(which ln) -sf $HOME/.dotfiles/vim/vimrc $HOME/.vimrc
+
+# Copy gitconfig - change values as required after copy
+$(which cp) $DOTFILES/gitconfig $HOME/.gitconfig
+
+# Configure directory colors
+# Make sure that coreutils is installed and ZSH is configured.
+$(which ln) -sf $HOME/.dotfiles/dircolors $HOME/.dircolors
+
+
+
 ```
 
-5. Link ZSH and VIM Config
+## Fonts
 
-```bash
+[Fira Code](https://github.com/tonsky/FiraCode) fonts are located in the `font` folder. Included are OTF, TTF and Variable width fonts. These should be installed with FontBook, through VSCode, etc.
 
-# Link zshrc
-ln -sf ~/.dotfiles/zsh/zshrc ~/.zshrc
-source ~/.zshrc
+```json
+// This is the font configuration for VSCode
+// Via: https://github.com/tonsky/FiraCode/wiki/VS-Code-Instructions
 
-# Setup VIM
-ln -sf ~/.dotfiles/vim/vimrc ~/.vimrc
-ln -sf ~/.dotfiles/vim/vim ~/.vim
+// Add the font
+"editor.fontFamily": "Fira Code",
+"editor.fontLigatures": true,
+
+// Add stylistic sets
+"editor.fontLigatures": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'"
 
 ```
 
-Alternatively run `linker.sh`
+## Fix ZSH compinit
 
+Occasionally ZSH will complain with this error:
 
+```shell
+zsh compinit: insecure directories, run compaudit for list.
+Ignore insecure directories and continue [y] or abort compinit [n]?
+```
 
+To fix this you must update permissions on some directories
+
+```shell
+# Works on older MacOS Versions. Might not work one newer ones
+sudo chmod -R 755 /usr/local/share/zsh/site-functions
+sudo chown -R root:root /usr/local/share/zsh/site-functions
+
+# Works on new MacOS Versions.
+sudo chmod -R 755 /usr/local/share/zsh
+sudo chown -R root:staff /usr/local/share/zsh
+
+```
 
 ## Useful Links
 

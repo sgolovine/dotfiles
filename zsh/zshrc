@@ -6,8 +6,12 @@ then
   $(which touch) $HOME/.secrets
   echo "# Add anything you do not want in .dotfiles here" >> $HOME/.secrets
 fi
+
+
 # Source .secrets file
 source $HOME/.secrets
+
+eval $(gdircolors ~/.dircolors/dircolors.ansi-universal)
 
 
 export DOTFILES=$HOME/.dotfiles
