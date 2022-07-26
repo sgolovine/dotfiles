@@ -7,9 +7,18 @@ then
   echo "# Add anything you do not want in .dotfiles here" >> $HOME/.secrets
 fi
 
+if [[ ! -f $HOME/.zshrc.local ]]
+then
+  echo "Autogenerating a new .zshrc.local file"
+  echo ".zshrc.local is used for any local machine configurations"
+  $(which touch) $HOME/.zshrc.local
+  echo "# .zshrc.local \n# put any local configurations into this file" >> $HOME/.zshrc.local
+fi
 
-# Source .secrets file
+
+# Source local configurations
 source $HOME/.secrets
+source $HOME/.zshrc.local
 
 eval $(gdircolors ~/.dircolors/dircolors.ansi-universal)
 
