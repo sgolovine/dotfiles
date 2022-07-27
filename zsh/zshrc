@@ -33,9 +33,3 @@ source $ZSH_ROOT/prompt.zsh
 source $ZSH_ROOT/aliases.zsh
 source $ZSH_ROOT/rbenv.zsh
 
-# bun completions
-[ -s "/Users/sgolovine/.bun/_bun" ] && source "/Users/sgolovine/.bun/_bun"
-
-# bun
-export BUN_INSTALL="/Users/sgolovine/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
