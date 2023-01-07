@@ -20,7 +20,8 @@ fi
 source $HOME/.secrets
 source $HOME/.zshrc.local
 
-eval $(gdircolors ~/.dircolors/dircolors.ansi-universal)
+# This needs to be disabled or fixed on Linux
+# eval $(gdircolors ~/.dircolors/dircolors.ansi-universal)
 
 
 export DOTFILES=$HOME/.dotfiles
@@ -31,5 +32,7 @@ source $ZSH_ROOT/git.zsh
 source $ZSH_ROOT/color.zsh
 source $ZSH_ROOT/prompt.zsh
 source $ZSH_ROOT/aliases.zsh
-source $ZSH_ROOT/rbenv.zsh
+
+# Disable on Linux for now.
+# source $ZSH_ROOT/rbenv.zsh
 

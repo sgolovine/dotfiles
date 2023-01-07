@@ -17,7 +17,7 @@
   meta = 11
   frag = magenta
   func = 146 bold
-  commit = yello
+  commit = yellow
   old = red
   new = green
   whitespace = red reverse
