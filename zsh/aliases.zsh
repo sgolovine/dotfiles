@@ -18,7 +18,6 @@ alias resrc='source ~/.zshrc && echo "Successfully Sourced zshrc"'
 alias brew-cask="brew install --cask"
 alias gbs='path-search'
 alias ls='ls --color'
-alias cat='bat'
 alias pm='pnpm'
 alias gcmnv='git commit --no-verify -m'
 alias adbrev='adb reverse tcp:8081 tcp:8081'
