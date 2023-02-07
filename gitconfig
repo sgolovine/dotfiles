@@ -21,3 +21,5 @@
   old = red
   new = green
   whitespace = red reverse
+[push]
+	autoSetupRemote = true
