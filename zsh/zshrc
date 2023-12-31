@@ -20,10 +20,6 @@ fi
 source $HOME/.secrets
 source $HOME/.zshrc.local
 
-# This needs to be disabled or fixed on Linux
-# eval $(gdircolors ~/.dircolors/dircolors.ansi-universal)
-
-
 export DOTFILES=$HOME/.dotfiles
 ZSH_ROOT=$DOTFILES/zsh
 
