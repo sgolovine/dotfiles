@@ -1,0 +1,11 @@
+1. Copy vim folder to $HOME/.vim
+2. Copy vimrc file to $HOME/.vimrc
+3. Run vim
+4. Run :PlugInstall to install plugins
+
+-----------
+
+mv $HOME/.vim $HOME/.vim_bak
+mv $HOME/.vimrc $HOME/.vimrc_bak
+cp -R vim $HOME/.vim
+cp vimrc $HOME/.vimrc

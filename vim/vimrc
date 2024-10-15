@@ -62,7 +62,7 @@ Plug 'milch/vim-fastlane'
 Plug 'leafgarland/typescript-vim'
 
 " Linting
-Plug 'w0rp/ale'
+Plug 'dense-analysis/ale'
 
 
 
