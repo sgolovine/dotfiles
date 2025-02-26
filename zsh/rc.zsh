@@ -9,7 +9,12 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 # cursor
-alias cursor='/opt/cursor/cursor.appimage --no-sandbox'
+# TODO: this alias does not work correctly
+# when opening a folder, it keeps the process inside
+# of the shell instead of offloading it.
+# we should really have a solution where it's added to
+# the path instead of doing dumb shit like this
+# alias cursor='/opt/cursor/cursor.appimage --no-sandbox &'
 
 
 # git aliases
