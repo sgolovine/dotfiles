@@ -45,3 +45,6 @@ alias pg-up="sudo systemctl start postgresql.service"
 alias pg-down="sudo systemctl stop postgresql.service"
 alias pg-status="sudo systemctl status postgresql.service"
 
+
+# Created by `pipx` on 2025-02-28 19:43:11
+export PATH="$PATH:/home/sgolovine/.local/bin"
