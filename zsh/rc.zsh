@@ -33,6 +33,9 @@ alias vi='nvim'
 alias vim='nvim'
 alias nano='nvim'
 
+# secure vim
+alias svim="sudo -E nvim"
+
 # misc aliases
 alias cls='clear'
 alias l='ls'
