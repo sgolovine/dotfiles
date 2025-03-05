@@ -2,26 +2,22 @@
 
 These are my personal "dotfiles" that I use to configure my development enviorment.
 
-## Installation (Quick)
+## Installation
+
+To install dotfiles, create symbolic links to the configs you would like to use.
 
 ```bash
-chmod +x ./INSTALL.sh
-./INSTALL.sh
-```
-
-## Installation (Manual)
-
-We "install" dotfiles by creating a symbolic link from the location in our dotfiles to the correct location for the config. 
-
-For example:
-
-```bash
-# zshrc
-ln -sf $HOME/dotfiles/zshrc/zshrc $HOME/.zshrc
 
 # neovim
 ln -sf $HOME/dotfiles/nvim $HOME/.config/nvim
 
+# zsh
+ln -sf $HOME/dotfiles/zsh/rc.zsh $HOME/.zshrc
+
+# vscode
+ln -sf $HOME/dotfiles/vscode/settings.json $HOME/.config/Code/User/settings.json
+
+# cursor
+ln -sf $HOME/dotfiles/vscode/settings.json $HOME/.config/Cursor/User/settings.json
+
 ```
-
-
