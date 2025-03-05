@@ -1,12 +1,16 @@
-# zshrc
+# enviorment variables
 export ZSH="$HOME/.oh-my-zsh"
+export PATH="$PATH:/home/sgolovine/.local/bin"
+export NVM_DIR="$HOME/.nvm"
+export EDITOR=nvim
+
+# zshrc
 ZSH_THEME="robbyrussell"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # node version manager
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 # cursor
 # TODO: this alias does not work correctly
@@ -47,7 +51,3 @@ alias resrc='source ~/.zshrc && echo "Successfully Sourced zshrc"'
 alias pg-up="sudo systemctl start postgresql.service"
 alias pg-down="sudo systemctl stop postgresql.service"
 alias pg-status="sudo systemctl status postgresql.service"
-
-
-# Created by `pipx` on 2025-02-28 19:43:11
-export PATH="$PATH:/home/sgolovine/.local/bin"
