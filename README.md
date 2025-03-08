@@ -20,4 +20,7 @@ ln -sf $HOME/dotfiles/vscode/settings.json $HOME/.config/Code/User/settings.json
 # cursor
 ln -sf $HOME/dotfiles/vscode/settings.json $HOME/.config/Cursor/User/settings.json
 
+# ghostty
+ln -sf $HOME/dotfiles/ghostty/config $HOME/.config/ghostty/config
+
 ```
