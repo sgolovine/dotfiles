@@ -24,3 +24,11 @@ ln -sf $HOME/dotfiles/vscode/settings.json $HOME/.config/Cursor/User/settings.js
 ln -sf $HOME/dotfiles/ghostty/config $HOME/.config/ghostty/config
 
 ```
+
+## Other Tools
+
+### Node Version Manager
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+```
