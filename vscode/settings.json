@@ -1,5 +1,5 @@
 {
-  "window.commandCenter": true,
+  "window.commandCenter": false,
   "editor.tabSize": 2,
   "workbench.activityBar.orientation": "vertical",
   "workbench.colorTheme": "Pro Theme",
@@ -21,5 +21,7 @@
   "vim.handleKeys": {
     "<C-p>": false,
     "<C-w>": false
-  }
+  },
+  "chat.commandCenter.enabled": false,
+  "workbench.layoutControl.enabled": false
 }
