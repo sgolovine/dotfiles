@@ -22,7 +22,8 @@
     "<C-p>": false,
     "<C-w>": false,
     "<C-c>": false,
-    "<C-v>": false
+    "<C-v>": false,
+    "<C-f>": false,
   },
   "chat.commandCenter.enabled": false,
   "workbench.layoutControl.enabled": false,
@@ -31,5 +32,7 @@
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true
 }
