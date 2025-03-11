@@ -14,14 +14,22 @@
   "editor.minimap.renderCharacters": false,
   "editor.fontLigatures": true,
   "workbench.panel.defaultLocation": "right",
-  "workbench.panel.opensMaximized": "never",
+  "workbench.panel.opensMaximized": "always",
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "vim.handleKeys": {
     "<C-p>": false,
-    "<C-w>": false
+    "<C-w>": false,
+    "<C-c>": false,
+    "<C-v>": false
   },
   "chat.commandCenter.enabled": false,
-  "workbench.layoutControl.enabled": false
+  "workbench.layoutControl.enabled": false,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
