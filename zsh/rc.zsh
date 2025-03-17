@@ -1,6 +1,7 @@
 # enviorment variables
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="$PATH:/home/sgolovine/.local/bin"
+export PATH="$PATH:/$HOME/dotfiles/bin"
 export NVM_DIR="$HOME/.nvm"
 export EDITOR=nvim
 
