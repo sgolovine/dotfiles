@@ -1,0 +1,40 @@
+{
+  "window.commandCenter": false,
+  "editor.tabSize": 2,
+  "workbench.activityBar.orientation": "vertical",
+  "workbench.colorTheme": "Pro Theme",
+  "workbench.iconTheme": "material-icon-theme",
+  "window.titleBarStyle": "native",
+  "editor.fontFamily": "JetBrains Mono",
+  "window.zoomLevel": 1,
+  "cursor.chat.terminalShowHoverHint": false,
+  "cursor.cmdk.autoSelect": false,
+  "cursor.composer.agentLoopOnLints": false,
+  "editor.minimap.enabled": true,
+  "editor.minimap.renderCharacters": false,
+  "editor.fontLigatures": true,
+  "workbench.panel.defaultLocation": "right",
+  "workbench.panel.opensMaximized": "always",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vim.handleKeys": {
+    "<C-p>": false,
+    "<C-w>": false,
+    "<C-c>": false,
+    "<C-v>": false,
+    "<C-f>": false,
+  },
+  "chat.commandCenter.enabled": false,
+  "workbench.layoutControl.enabled": false,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "eslint.format.enable": true,
+  "eslint.lintTask.enable": true
+}
