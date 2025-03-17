@@ -1,7 +1,8 @@
 # enviorment variables
 export ZSH="$HOME/.oh-my-zsh"
+export DOTFILES="$HOME/dotfiles"
 export PATH="$PATH:/home/sgolovine/.local/bin"
-export PATH="$PATH:/$HOME/dotfiles/bin"
+export PATH="$PATH:$DOTFILES/bin"
 export NVM_DIR="$HOME/.nvm"
 export EDITOR=nvim
 
@@ -12,14 +13,6 @@ source $ZSH/oh-my-zsh.sh
 
 # node version manager
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-
-# cursor
-# TODO: this alias does not work correctly
-# when opening a folder, it keeps the process inside
-# of the shell instead of offloading it.
-# we should really have a solution where it's added to
-# the path instead of doing dumb shit like this
-# alias cursor='/opt/cursor/cursor.appimage --no-sandbox &'
 
 
 # git aliases
