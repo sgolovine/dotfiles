@@ -45,3 +45,6 @@ alias resrc='source ~/.zshrc && echo "Successfully Sourced zshrc"'
 alias pg-up="sudo systemctl start postgresql.service"
 alias pg-down="sudo systemctl stop postgresql.service"
 alias pg-status="sudo systemctl status postgresql.service"
+
+# docker aliases
+alias docker-clean-build="COMPOSE_BAKE=true docker compose build --no-cache && docker compose up"
