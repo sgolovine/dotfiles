@@ -4,7 +4,7 @@
   "workbench.activityBar.orientation": "vertical",
   "workbench.colorTheme": "Pro Theme",
   "workbench.iconTheme": "material-icon-theme",
-  "window.titleBarStyle": "native",
+  "window.titleBarStyle": "custom",
   "editor.fontFamily": "JetBrains Mono",
   "window.zoomLevel": 1,
   "cursor.chat.terminalShowHoverHint": false,
@@ -36,5 +36,6 @@
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "eslint.format.enable": true,
-  "eslint.lintTask.enable": true
+  "eslint.lintTask.enable": true,
+  "explorer.confirmDelete": false
 }
