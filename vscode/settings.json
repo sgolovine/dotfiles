@@ -25,6 +25,7 @@
     "<C-v>": false,
     "<C-f>": false,
   },
+  "vim.useSystemClipboard": true,
   "chat.commandCenter.enabled": false,
   "workbench.layoutControl.enabled": false,
   "[typescriptreact]": {
