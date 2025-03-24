@@ -5,11 +5,17 @@ export PATH="$PATH:/home/sgolovine/.local/bin"
 export PATH="$PATH:$DOTFILES/bin"
 export NVM_DIR="$HOME/.nvm"
 export EDITOR=nvim
+export DEFAULT_USER=sgolovine
 
 # zshrc
-ZSH_THEME="robbyrussell"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
+
+# oh-my-zsh theme
+# DEFAULT_USER is required so that the shell
+# does not show the username in the powerline
+ZSH_THEME="agnoster"
+DEFAULT_USER=sgolovine
 
 # node version manager
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
