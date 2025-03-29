@@ -49,3 +49,6 @@ alias pg-status="sudo systemctl status postgresql.service"
 
 # docker aliases
 alias docker-clean-build="COMPOSE_BAKE=true docker compose build --no-cache && docker compose up"
+
+# firefox screenshot mode
+alias ff-screenshot='firefox -height 1080 -width 1920 &'
