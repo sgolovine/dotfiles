@@ -3,7 +3,7 @@
   "editor.tabSize": 2,
   "workbench.activityBar.orientation": "vertical",
   "workbench.colorTheme": "Pro Theme",
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "vscode-icons",
   "window.titleBarStyle": "custom",
   "editor.fontFamily": "JetBrains Mono",
   "window.zoomLevel": 1,
