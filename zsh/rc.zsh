@@ -50,3 +50,6 @@ alias pg-status="sudo systemctl status postgresql.service"
 # docker aliases
 alias docker-clean-build="COMPOSE_BAKE=true docker compose build --no-cache && docker compose up"
 alias dcb='docker-clean-build'
+
+# vscode
+alias md-edit='code --profile "Markdown Writer"'
