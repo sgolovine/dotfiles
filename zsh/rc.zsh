@@ -54,5 +54,9 @@ alias dcb='docker-clean-build'
 # vscode
 alias md-edit='code --profile "Markdown Writer"'
 
-# personal website
+# project aliases 
 alias www-cms="md-edit $HOME/Code/www/src/content/posts"
+alias wfe="cd ~/Work/ascend-ai-frontend"
+alias wbe="cd ~/Work/ascend-ai-backend"
+alias cfe="cd ~/Crewsum/frontend"
+alias cbe="cd ~/Crewsum/backend"
