@@ -60,3 +60,6 @@ alias wfe="cd ~/Work/ascend-ai-frontend"
 alias wbe="cd ~/Work/ascend-ai-backend"
 alias cfe="cd ~/Crewsum/frontend"
 alias cbe="cd ~/Crewsum/backend"
+
+# brancher
+alias brancher="npx tsx $HOME/Code/brancher/brancher.ts"
