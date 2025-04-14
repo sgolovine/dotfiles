@@ -14,7 +14,6 @@
   "editor.minimap.renderCharacters": false,
   "editor.fontLigatures": true,
   "workbench.panel.defaultLocation": "right",
-  "workbench.panel.opensMaximized": "always",
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -38,5 +37,6 @@
   "editor.formatOnSave": true,
   "eslint.format.enable": true,
   "eslint.lintTask.enable": true,
-  "explorer.confirmDelete": false
+  "explorer.confirmDelete": false,
+  "git.openRepositoryInParentFolders": "never"
 }
