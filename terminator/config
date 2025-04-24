@@ -1,5 +1,10 @@
 [global_config]
+  handle_size = 3
 [keybindings]
+  go_up = <Primary>Up
+  go_down = <Primary>Down
+  go_left = <Primary>Left
+  go_right = <Primary>Right
   split_horiz = <Primary>bracketleft
   split_vert = <Primary>bracketright
 [profiles]
