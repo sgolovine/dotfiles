@@ -38,5 +38,8 @@
   "eslint.format.enable": true,
   "eslint.lintTask.enable": true,
   "explorer.confirmDelete": false,
-  "git.openRepositoryInParentFolders": "never"
+  "git.openRepositoryInParentFolders": "never",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
