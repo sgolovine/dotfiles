@@ -11,6 +11,7 @@ export ZSH_THEME="agnoster"
 # zshrc
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
+source $DOTFILES/zsh/lscolors.sh
 
 # node version manager
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
