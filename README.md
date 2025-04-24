@@ -9,20 +9,22 @@ To install dotfiles, create symbolic links to the configs you would like to use.
 ```bash
 
 # neovim
-ln -sf $HOME/dotfiles/nvim $HOME/.config/nvim
+ln -sf $DOTFILES/nvim $HOME/.config/nvim
 
 # zsh
-ln -sf $HOME/dotfiles/zsh/rc.zsh $HOME/.zshrc
+ln -sf $DOTFILES/zsh/rc.zsh $HOME/.zshrc
 
 # vscode
-ln -sf $HOME/dotfiles/vscode/settings.json $HOME/.config/Code/User/settings.json
+ln -sf $DOTFILES/vscode/settings.json $HOME/.config/Code/User/settings.json
 
 # cursor
-ln -sf $HOME/dotfiles/vscode/settings.json $HOME/.config/Cursor/User/settings.json
+ln -sf $DOTFILES/vscode/settings.json $HOME/.config/Cursor/User/settings.json
 
 # ghostty
-ln -sf $HOME/dotfiles/ghostty/config $HOME/.config/ghostty/config
+ln -sf $DOTFILES/ghostty/config $HOME/.config/ghostty/config
 
+# terminator
+ln -sf $DOTFILES/terminator $HOME/.config/terminator
 ```
 
 ## Other Tools
