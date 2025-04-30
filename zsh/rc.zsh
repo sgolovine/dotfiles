@@ -27,6 +27,7 @@ alias gp='git push'
 alias gst='git status'
 alias gco='git checkout'
 alias gb='git branch'
+alias gcnv="git commit --no-verify"
 
 # vim/nvim aliases
 alias vi='nvim'

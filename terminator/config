@@ -1,5 +1,6 @@
 [global_config]
   handle_size = 3
+  suppress_multiple_term_dialog = True
 [keybindings]
   go_up = <Primary>Up
   go_down = <Primary>Down
