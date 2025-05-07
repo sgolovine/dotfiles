@@ -66,3 +66,4 @@ alias cbe="cd ~/Crewsum/backend"
 # brancher
 alias brancher="npx tsx $HOME/Code/brancher/brancher.ts"
 alias todo="$HOME/.venv/bin/pter $HOME/Dropbox/todo.txt"
+alias t='todo'
