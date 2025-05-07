@@ -2,12 +2,14 @@
   handle_size = 3
   suppress_multiple_term_dialog = True
 [keybindings]
+  new_tab = <Primary>t
   go_up = <Primary>Up
   go_down = <Primary>Down
   go_left = <Primary>Left
   go_right = <Primary>Right
   split_horiz = <Primary>bracketleft
   split_vert = <Primary>bracketright
+  close_term = <Primary>w
 [profiles]
   [[default]]
     icon_bell = False

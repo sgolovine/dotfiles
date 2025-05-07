@@ -7,7 +7,7 @@ export NVM_DIR="$HOME/.nvm"
 export EDITOR=nvim
 export DEFAULT_USER=sgolovine
 export ZSH_THEME="agnoster"
-
+export TODO_DIR="$HOME/Dropbox/todo"
 # zshrc
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
@@ -65,3 +65,4 @@ alias cbe="cd ~/Crewsum/backend"
 
 # brancher
 alias brancher="npx tsx $HOME/Code/brancher/brancher.ts"
+alias t="$HOME/dotfiles/bin/todo.sh"
