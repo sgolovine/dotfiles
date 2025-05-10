@@ -66,5 +66,7 @@ alias cbe="cd ~/Crewsum/backend"
 # cli apps 
 alias brancher="npx tsx $HOME/Code/brancher/brancher.ts"
 alias todo="$HOME/.venv/bin/pter --config $HOME/dotfiles/pter/pter.conf $HOME/Dropbox/todo/todo.txt"
+alias todo-archived="$HOME/.venv/bin/pter --config $HOME/dotfiles/pter/pter.conf $HOME/Dropbox/todo/archive.txt"
 alias t='todo'
+alias t-a='todo-archived'
 alias llm='$HOME/.venv/bin/llm'

@@ -44,5 +44,6 @@
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "terminal.integrated.enableMultiLinePasteWarning": "never"
 }
