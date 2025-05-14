@@ -48,5 +48,6 @@
   "terminal.integrated.enableMultiLinePasteWarning": "never",
   "chat.agent.enabled": false,
   "chat.focusWindowOnConfirmation": false,
-  "telemetry.feedback.enabled": false
+  "telemetry.feedback.enabled": false,
+  "workbench.editor.empty.hint": "hidden"
 }
