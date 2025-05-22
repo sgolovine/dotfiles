@@ -13,6 +13,9 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 source $DOTFILES/zsh/lscolors.sh
 
+# rust / cargo
+source $HOME/.cargo/env
+
 # node version manager
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
@@ -54,7 +57,8 @@ alias docker-clean-build="COMPOSE_BAKE=true docker compose build --no-cache && d
 alias dcb='docker-clean-build'
 
 # vscode
-alias md-edit='code --profile "Markdown Writer"'
+alias code='codium'
+alias md-edit='/usr/bin/code --profile "Markdown Writer"'
 
 # project aliases 
 alias www-cms="md-edit $HOME/Code/www/src/content/posts"
@@ -70,3 +74,4 @@ alias todo-archived="$HOME/.venv/bin/pter --config $HOME/dotfiles/pter/pter.conf
 alias t='todo'
 alias t-a='todo-archived'
 alias llm='$HOME/.venv/bin/llm'
+alias lg='lazygit'
