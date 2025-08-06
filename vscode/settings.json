@@ -51,5 +51,13 @@
   "workbench.editor.empty.hint": "hidden",
   "git.blame.editorDecoration.enabled": true,
   "workbench.productIconTheme": "material-product-icons",
-  "workbench.iconTheme": "material-icon-theme"
+  "workbench.iconTheme": "material-icon-theme",
+  "latex-workshop.hover.command.enabled": false,
+  "cSpell.userWords": ["Mjml"],
+  "workbench.startupEditor": "none",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "builder.serverUrl": "http://localhost:5000",
+  "builder.command": "docker compose up",
+  "builder.openInBrowser": false,
+  "javascript.updateImportsOnFileMove.enabled": "always"
 }
