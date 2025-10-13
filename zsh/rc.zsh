@@ -70,6 +70,7 @@ alias cbe="cd ~/Crewsum/backend"
 
 # cli replacements
 alias cat="bat"
+alias ls='lsd'
 
 # cli apps 
 alias brancher="npx tsx $HOME/Code/brancher/brancher.ts"
