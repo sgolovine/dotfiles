@@ -23,6 +23,16 @@
     "<C-v>": false,
     "<C-f>": false
   },
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["k", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
   "vim.useSystemClipboard": true,
   "chat.commandCenter.enabled": false,
   "workbench.layoutControl.enabled": false,
@@ -59,5 +69,15 @@
   "builder.serverUrl": "http://localhost:5000",
   "builder.command": "docker compose up",
   "builder.openInBrowser": false,
-  "javascript.updateImportsOnFileMove.enabled": "always"
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "update.showReleaseNotes": false,
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  }
 }

@@ -59,6 +59,7 @@ alias dcb='docker-clean-build'
 # vscode
 alias code='codium'
 alias md-edit='/usr/bin/code --profile "Markdown Writer"'
+alias mdesd="md-edit ~/.sdoc"
 
 # project aliases 
 alias www-cms="md-edit $HOME/Code/www/src/content/posts"
