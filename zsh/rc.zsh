@@ -68,6 +68,9 @@ alias wbe="cd ~/Work/ascend-ai-backend"
 alias cfe="cd ~/Crewsum/frontend"
 alias cbe="cd ~/Crewsum/backend"
 
+# cli replacements
+alias cat="bat"
+
 # cli apps 
 alias brancher="npx tsx $HOME/Code/brancher/brancher.ts"
 alias todo="$HOME/.venv/bin/pter --config $HOME/dotfiles/pter/pter.conf $HOME/Dropbox/todo/todo.txt"
