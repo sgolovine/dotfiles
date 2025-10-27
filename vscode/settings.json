@@ -4,7 +4,7 @@
   "workbench.activityBar.orientation": "vertical",
   "workbench.colorTheme": "GitHub Dark Colorblind (Beta)",
   "window.titleBarStyle": "custom",
-  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
   "window.zoomLevel": 1,
   "cursor.chat.terminalShowHoverHint": false,
   "cursor.cmdk.autoSelect": false,
