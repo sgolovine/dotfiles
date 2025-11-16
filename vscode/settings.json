@@ -21,7 +21,8 @@
     "<C-w>": false,
     "<C-c>": false,
     "<C-v>": false,
-    "<C-f>": false
+    "<C-f>": false,
+    "<CapsLock>": false
   },
   "vim.insertModeKeyBindings": [
     {
@@ -63,7 +64,7 @@
   "workbench.productIconTheme": "material-product-icons",
   "workbench.iconTheme": "material-icon-theme",
   "latex-workshop.hover.command.enabled": false,
-  "cSpell.userWords": ["Mjml"],
+  "cSpell.userWords": ["checkpointer", "langchain", "langfuse", "Mjml"],
   "workbench.startupEditor": "none",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "builder.serverUrl": "http://localhost:5000",
@@ -79,5 +80,6 @@
   },
   "[github-actions-workflow]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
-  }
+  },
+  "git.blame.statusBarItem.enabled": true
 }
