@@ -14,7 +14,7 @@ source $ZSH/oh-my-zsh.sh
 source $DOTFILES/zsh/lscolors.sh
 
 # rust / cargo
-source $HOME/.cargo/env
+# source $HOME/.cargo/env
 
 # node version manager
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
