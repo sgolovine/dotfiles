@@ -2,6 +2,14 @@
 
 These are my personal "dotfiles" that I use to configure my development enviorment.
 
+## Downloads
+These tools should be downloaded
+
+- [LSD (ls alternative)](https://github.com/lsd-rs/lsd/releases)
+- [Bat (cat alternative)](https://github.com/sharkdp/bat/releases)
+- [Delta (git diff alterantive)](https://github.com/dandavison/delta/releases)
+- [VSCodium](https://github.com/VSCodium/vscodium/releases)
+
 ## Installation
 
 To install dotfiles, create symbolic links to the configs you would like to use.
@@ -28,14 +36,21 @@ ln -sf $DOTFILES/ghostty/config $HOME/.config/ghostty/config
 
 # terminator
 ln -sf $DOTFILES/terminator $HOME/.config/terminator
+
+# gitconfig
+ln -sf $DOTFILES/git/gitconfig $HOME/.gitconfig
 ```
 
 ## Other Tools
 
-### Node Version Manager
-
 ```bash
+
+# Node Version Manager
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+
+# Oh My ZSH
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 ```
 
 ### Docker
