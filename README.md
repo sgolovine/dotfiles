@@ -17,6 +17,9 @@ ln -sf $DOTFILES/zsh/rc.zsh $HOME/.zshrc
 # vscode
 ln -sf $DOTFILES/vscode/settings.json $HOME/.config/Code/User/settings.json
 
+# vscodium
+ln -sf $DOTFILES/vscode/settings.json $HOME/.config/VSCodium/User/settings.json
+
 # cursor
 ln -sf $DOTFILES/vscode/settings.json $HOME/.config/Cursor/User/settings.json
 
