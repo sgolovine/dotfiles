@@ -2,7 +2,6 @@
   "window.commandCenter": false,
   "editor.tabSize": 2,
   "workbench.activityBar.orientation": "vertical",
-  "workbench.colorTheme": "GitHub Dark Colorblind (Beta)",
   "window.titleBarStyle": "custom",
   "editor.fontFamily": "JetBrainsMono Nerd Font",
   "window.zoomLevel": 1,
@@ -81,5 +80,6 @@
   "[github-actions-workflow]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
-  "git.blame.statusBarItem.enabled": true
+  "git.blame.statusBarItem.enabled": true,
+  "workbench.colorTheme": "GitHub Dark Colorblind (Beta)"
 }

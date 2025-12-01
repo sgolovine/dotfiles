@@ -53,12 +53,12 @@ alias pg-down="sudo systemctl stop postgresql.service"
 alias pg-status="sudo systemctl status postgresql.service"
 
 # docker aliases
+alias d='docker'
 alias docker-clean-build="COMPOSE_BAKE=true docker compose build --no-cache && docker compose up"
 alias dcb='docker-clean-build'
 
 # vscode
-alias code='codium'
-alias md-edit='/usr/bin/code --profile "Markdown Writer"'
+alias code='codium --ozone-platform=wayland'
 
 # project aliases 
 alias www-cms="md-edit $HOME/Code/www/src/content/posts"
