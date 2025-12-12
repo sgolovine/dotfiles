@@ -57,6 +57,7 @@ alias d='docker'
 alias docker-clean-build="COMPOSE_BAKE=true docker compose build --no-cache && docker compose up"
 alias dcb='docker-clean-build'
 alias dc-ls="docker container ls"
+alias dc-lsa="docker container ls -a"
 alias di-ls="docker image ls"
 alias dc-rm="docker container rm"
 alias di-rm="docker image rm"
