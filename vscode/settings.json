@@ -81,5 +81,6 @@
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
   "git.blame.statusBarItem.enabled": true,
-  "workbench.colorTheme": "GitHub Dark Colorblind (Beta)"
+  "workbench.colorTheme": "GitHub Dark Colorblind (Beta)",
+  "typescript.tsserver.maxTsServerMemory": 16384
 }

@@ -56,9 +56,13 @@ alias pg-status="sudo systemctl status postgresql.service"
 alias d='docker'
 alias docker-clean-build="COMPOSE_BAKE=true docker compose build --no-cache && docker compose up"
 alias dcb='docker-clean-build'
+alias dc-ls="docker container ls"
+alias di-ls="docker image ls"
+alias dc-rm="docker container rm"
+alias di-rm="docker image rm"
 
 # vscode
-alias code='codium --ozone-platform=wayland'
+alias code='codium --enable-features=WaylandWindowDecorations --ozone-platform=wayland'
 
 # project aliases 
 alias www-cms="md-edit $HOME/Code/www/src/content/posts"
