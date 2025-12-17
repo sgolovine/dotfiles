@@ -8,6 +8,12 @@ export EDITOR=nvim
 export DEFAULT_USER=sgolovine
 export ZSH_THEME="agnoster"
 
+
+# x-wayland fixes
+export XCURSOR_THEME=Yaru
+export XCURSOR_SIZE=32
+
+
 # zshrc
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
