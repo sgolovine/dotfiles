@@ -68,9 +68,6 @@ alias di-ls="docker image ls"
 alias dc-rm="docker container rm"
 alias di-rm="docker image rm"
 
-# vscode
-alias code='codium --enable-features=WaylandWindowDecorations --ozone-platform=wayland'
-
 # project aliases 
 alias www-cms="md-edit $HOME/Code/www/src/content/posts"
 alias wfe="cd ~/Work/ascend-ai-frontend"
