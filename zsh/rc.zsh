@@ -67,6 +67,7 @@ alias dc-lsa="docker container ls -a"
 alias di-ls="docker image ls"
 alias dc-rm="docker container rm"
 alias di-rm="docker image rm"
+alias dlf="docker logs -f"
 
 # project aliases 
 alias www-cms="md-edit $HOME/Code/www/src/content/posts"
