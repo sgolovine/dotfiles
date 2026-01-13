@@ -1,7 +1,7 @@
 [global_config]
   handle_size = 3
   suppress_multiple_term_dialog = True
-  invert_search = True
+  case_sensitive = False
 [keybindings]
   new_tab = <Primary>t
   go_up = <Primary>Up

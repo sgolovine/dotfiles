@@ -82,5 +82,6 @@
   },
   "git.blame.statusBarItem.enabled": true,
   "workbench.colorTheme": "GitHub Dark Colorblind (Beta)",
-  "typescript.tsserver.maxTsServerMemory": 16384
+  "typescript.tsserver.maxTsServerMemory": 16384,
+  "typescript.experimental.useTsgo": true
 }
