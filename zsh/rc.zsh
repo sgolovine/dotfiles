@@ -25,6 +25,3 @@ source $DOTFILES/zsh/lscolors.sh
 #
 # aliases
 source $DOTFILES/zsh/aliases.zsh
-#
-# secret
-source $HOME/.secrets
