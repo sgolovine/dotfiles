@@ -13,7 +13,7 @@
   "editor.fontLigatures": true,
   "workbench.panel.defaultLocation": "right",
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "vim.handleKeys": {
     "<C-p>": false,
@@ -21,26 +21,26 @@
     "<C-c>": false,
     "<C-v>": false,
     "<C-f>": false,
-    "<CapsLock>": false
+    "<CapsLock>": false,
   },
   "vim.insertModeKeyBindings": [
     {
       "before": ["j", "k"],
-      "after": ["<Esc>"]
+      "after": ["<Esc>"],
     },
     {
       "before": ["k", "j"],
-      "after": ["<Esc>"]
-    }
+      "after": ["<Esc>"],
+    },
   ],
   "vim.useSystemClipboard": true,
   "chat.commandCenter.enabled": false,
   "workbench.layoutControl.enabled": false,
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
@@ -49,10 +49,10 @@
   "explorer.confirmDelete": false,
   "git.openRepositoryInParentFolders": "never",
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "terminal.integrated.enableMultiLinePasteWarning": "never",
   "chat.agent.enabled": false,
@@ -75,13 +75,16 @@
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
     "editor.autoIndent": "advanced",
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
   },
   "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
   },
   "git.blame.statusBarItem.enabled": true,
   "workbench.colorTheme": "GitHub Dark Colorblind (Beta)",
   "typescript.tsserver.maxTsServerMemory": 16384,
-  "typescript.experimental.useTsgo": true
+  "typescript.experimental.useTsgo": false,
+  "claudeCode.preferredLocation": "panel",
+  "typescript.preferences.importModuleSpecifier": "shortest",
+  "claudeCode.useTerminal": true,
 }

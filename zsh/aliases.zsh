@@ -64,3 +64,6 @@ alias wfe="cd ~/Work/ascend-ai-frontend"
 alias wbe="cd ~/Work/ascend-ai-backend"
 alias cfe="cd ~/Crewsum/frontend"
 alias cbe="cd ~/Crewsum/backend"
+#
+# beanstalk project
+alias docker-nuke="cd $HOME/Work/docker-nuke-assistant/dist && node ./nuke.js"
