@@ -2,8 +2,14 @@
 
 font-family = "JetBrains Mono"
 
+# create splits
 keybind = ctrl+]=new_split:right
 keybind = ctrl+[=new_split:up
+
+# new tab
+keybind = ctrl+t=new_tab
+
+# navigate splits
 keybind = ctrl+up=goto_split:up
 keybind = ctrl+down=goto_split:down
 keybind = ctrl+right=goto_split:right
