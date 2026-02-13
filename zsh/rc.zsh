@@ -25,3 +25,6 @@ source $DOTFILES/zsh/lscolors.sh
 #
 # aliases
 source $DOTFILES/zsh/aliases.zsh
+
+# opencode
+export PATH=/home/sgolovine/.opencode/bin:$PATH
