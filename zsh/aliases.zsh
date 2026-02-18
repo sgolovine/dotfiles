@@ -26,8 +26,6 @@ alias gb='git branch'
 alias gcnv="git commit --no-verify"
 #
 #
-# root nvim alias - references nvim from /bin/nvim/bin/nvim
-alias nvim='$HOME/dotfiles/bin/nvim/bin/nvim'
 # vim/nvim aliases
 alias vi='nvim'
 alias vim='nvim'

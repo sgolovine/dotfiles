@@ -28,3 +28,4 @@ source $DOTFILES/zsh/aliases.zsh
 
 # opencode
 export PATH=/home/sgolovine/.opencode/bin:$PATH
+export PATH=/home/sgolovine/dotfiles/bin/nvim/bin:$PATH
