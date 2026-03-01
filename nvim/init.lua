@@ -1,7 +1,7 @@
 local o = vim.o
 
 
-o.noswapfile = true
+-- o.noswapfile = true
 o.clipboard = 'unnamed'
 o.cursorline = false
 o.hlsearch = true
