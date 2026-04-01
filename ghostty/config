@@ -1,6 +1,13 @@
 # My ghostty configuration
 
-font-family = "JetBrains Mono"
+# font-family = "JetBrains Mono"
+
+# fonts
+font-family = "B612 Mono"
+font-family-bold = "B612 Mono Bold"
+font-family-italic="B612 Mono Italic"
+font-family-bold-italic="B612 Mono Bold Italic"
+
 shell-integration = zsh
 
 # create splits
