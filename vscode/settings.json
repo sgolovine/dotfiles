@@ -3,7 +3,7 @@
   "editor.tabSize": 2,
   "workbench.activityBar.orientation": "vertical",
   "window.titleBarStyle": "custom",
-  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.fontFamily": "B612 Mono",
   "window.zoomLevel": 1,
   "cursor.chat.terminalShowHoverHint": false,
   "cursor.cmdk.autoSelect": false,
@@ -87,4 +87,5 @@
   "claudeCode.preferredLocation": "panel",
   "typescript.preferences.importModuleSpecifier": "shortest",
   "claudeCode.useTerminal": true,
+  "window.menuBarVisibility": "compact",
 }
