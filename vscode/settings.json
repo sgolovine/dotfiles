@@ -88,4 +88,5 @@
   "typescript.preferences.importModuleSpecifier": "shortest",
   "claudeCode.useTerminal": true,
   "window.menuBarVisibility": "compact",
+  "diffEditor.renderSideBySide": true,
 }
