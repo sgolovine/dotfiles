@@ -73,3 +73,4 @@ alias docker-nuke="cd $HOME/Work/docker-nuke-assistant/dist && node ./nuke.js"
 # AI stuff
 alias codex="codex --yolo"
 alias claude="claude --dangerously-skip-permissions"
+alias lms="$HOME/apps/lm-studio/LM-Studio.AppImage --no-sandbox"
