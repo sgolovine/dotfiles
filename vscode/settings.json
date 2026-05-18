@@ -60,7 +60,6 @@
   "telemetry.feedback.enabled": false,
   "workbench.editor.empty.hint": "hidden",
   "git.blame.editorDecoration.enabled": true,
-  "workbench.productIconTheme": "material-product-icons",
   "workbench.iconTheme": "material-icon-theme",
   "latex-workshop.hover.command.enabled": false,
   "cSpell.userWords": ["checkpointer", "langchain", "langfuse", "Mjml"],
