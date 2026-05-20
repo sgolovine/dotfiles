@@ -36,4 +36,5 @@ export PATH="$HOME/dotfiles/apps/nvim/bin:$PATH"
 export PATH="$PATH:$HOME/.lmstudio/bin"
 
 # pnpm bin
-export PATH="$PATH:$HOME/.local/share/pnpm/bin"
+export PATH="$PATH:$HOME/.local/share/pnpm"
+export PNPM_HOME="/home/sgolovine/.local/share/pnpm"
