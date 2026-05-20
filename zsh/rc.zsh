@@ -31,3 +31,9 @@ export PATH=/home/sgolovine/.opencode/bin:$PATH
 
 # nvim
 export PATH="$HOME/dotfiles/apps/nvim/bin:$PATH"
+
+# lmstudio path
+export PATH="$PATH:$HOME/.lmstudio/bin"
+
+# pnpm bin
+export PATH="$PATH:$HOME/.local/share/pnpm/bin"
