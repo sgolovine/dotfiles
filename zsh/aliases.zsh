@@ -25,6 +25,11 @@ alias gco='git checkout'
 alias gb='git branch'
 alias gcnv="git commit --no-verify"
 #
+# npm aliases
+alias bump-patch='npm version --no-git-tag-version patch'
+alias bump-minor='npm version --no-git-tag-version minor'
+alias bump-major='npm version --no-git-tag-version major'
+#
 # vim/nvim aliases
 alias vi='nvim'
 alias vim='nvim'
@@ -77,3 +82,6 @@ alias lms="$HOME/apps/lm-studio/LM-Studio.AppImage --no-sandbox"
 #
 # hunk diff
 alias hd="hunk diff"
+#
+# copy path to clipboard.
+alias pwdc="pwd | wl-copy && echo \"copied pwd to clipboard\""
