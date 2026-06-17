@@ -72,9 +72,6 @@ alias wbe="cd ~/Work/ascend-ai-backend"
 alias cfe="cd ~/Crewsum/frontend"
 alias cbe="cd ~/Crewsum/backend"
 #
-# beanstalk project
-alias docker-nuke="cd $HOME/Work/docker-nuke-assistant/dist && node ./nuke.js"
-#
 # AI stuff
 alias codex="codex --yolo"
 alias claude="claude --dangerously-skip-permissions"
