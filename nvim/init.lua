@@ -15,6 +15,8 @@ o.shiftwidth = 2
 o.shiftround = true
 o.expandtab = true
 
+-- clipboard integration
+vim.opt.clipboard = "unnamedplus"
 
 -- package manager init
 -- to add plugins, see lua/plugins.lua
