@@ -2,7 +2,7 @@
   "window.commandCenter": false,
   "editor.tabSize": 2,
   "workbench.activityBar.orientation": "vertical",
-  "window.titleBarStyle": "native",
+  "window.titleBarStyle": "custom",
   "window.menuStyle": "custom",
   "editor.fontFamily": "B612 Mono",
   "window.zoomLevel": 1,
