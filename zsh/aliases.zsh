@@ -89,3 +89,6 @@ alias tf='terraform'
 #
 # ssh / devbox
 alias ssh-rook="ssh 192.168.68.62"
+#
+# codium
+alias cdm="codium"
