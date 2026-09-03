@@ -64,7 +64,6 @@ alias dv-rm="docker volume rm"
 alias dlf="docker logs -f"
 alias dps="docker container ls"
 alias dpsa="docker container ls -a"
-alias dm="docker-manager"
 #
 # project specific
 alias www-cms="md-edit $HOME/Code/www/src/content/posts"
@@ -92,3 +91,7 @@ alias ssh-rook="ssh 192.168.68.62"
 #
 # codium
 alias cdm="codium"
+#
+# personal apps
+alias dm="docker-manager"
+alias wt="worktree-manager"
