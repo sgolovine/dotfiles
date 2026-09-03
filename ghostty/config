@@ -24,3 +24,6 @@ keybind = ctrl+down=goto_split:down
 keybind = ctrl+right=goto_split:right
 keybind = ctrl+left=goto_split:left
 
+# default window size
+window-width = 160
+window-height = 50
