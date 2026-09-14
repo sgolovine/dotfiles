@@ -14,7 +14,7 @@
   "editor.fontLigatures": true,
   "workbench.panel.defaultLocation": "right",
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "biomejs.biome",
   },
   "vim.handleKeys": {
     "<C-p>": false,
