@@ -7,6 +7,7 @@ export NVM_DIR="$HOME/.nvm"
 export EDITOR=nvim
 export DEFAULT_USER=sgolovine
 export ZSH_THEME="agnoster"
+export HERDR_ENV=1
 #
 # x-wayland fixes
 export XCURSOR_THEME=Yaru

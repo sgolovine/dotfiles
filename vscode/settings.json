@@ -38,7 +38,7 @@
   "chat.commandCenter.enabled": false,
   "workbench.layoutControl.enabled": false,
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "vscode.typescript-language-features",
   },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features",
@@ -101,4 +101,6 @@
     "https://biomejs.dev": true
   },
   "explorer.confirmDragAndDrop": false,
+  "intellij.region": "americas",
+  "intellij.dataSharing": "none",
 }
