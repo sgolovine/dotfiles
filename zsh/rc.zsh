@@ -7,7 +7,7 @@ export NVM_DIR="$HOME/.nvm"
 export EDITOR=nvim
 export DEFAULT_USER=sgolovine
 export ZSH_THEME="agnoster"
-export HERDR_ENV=1
+# export HERDR_ENV=1
 #
 # x-wayland fixes
 export XCURSOR_THEME=Yaru
@@ -55,3 +55,11 @@ esac
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
+# local settings
+if [ ! -e "$HOME/.local.zsh" ]; then
+  touch "$HOME/.local.zsh"
+  source "$HOME/.local.zsh"
+  print -r -- "Created $HOME/.local.zsh"
+else
+  source "$HOME/.local.zsh"
+fi
