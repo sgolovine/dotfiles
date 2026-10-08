@@ -91,12 +91,15 @@ _bashrc_prompt() {
     local status=$?
     history -a
     history -n
+    # Resolve Git information here, rather than parsing a command substitution
+    # during PS1 expansion. Expand the result as data, including unusual refs.
+    _bashrc_git_status=$(_bashrc_git_prompt)
     if [[ ${TERM:-dumb} == dumb ]]; then
-        PS1='\u@\h \w$(_bashrc_git_prompt)'
+        PS1='\u@\h \w${_bashrc_git_status}'
         (( status == 0 )) || PS1+=" [$status]"
         PS1+='\n\$ '
     else
-        PS1='\n\[\e[32m\]\u@\h\[\e[0m\] \[\e[34m\]\w\[\e[33m\]$(_bashrc_git_prompt)\[\e[0m\]'
+        PS1='\n\[\e[32m\]\u@\h\[\e[0m\] \[\e[34m\]\w\[\e[33m\]${_bashrc_git_status}\[\e[0m\]'
         (( status == 0 )) || PS1+=" \[\e[31m\][$status]\[\e[0m\]"
         PS1+='\n\$ '
     fi
