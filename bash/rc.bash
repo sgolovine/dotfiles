@@ -120,8 +120,6 @@ alias la='ls -A'
 alias vi="${EDITOR:-vim}"
 alias vim="${EDITOR:-vim}"
 alias nano="${EDITOR:-vim}"
-# Windows elevation is handled by starting Git Bash as Administrator.
-alias svim="${EDITOR:-vim}"
 alias cls='clear'
 alias resrc='source "$HOME/.bashrc" && echo "Successfully sourced bashrc"'
 alias ..='cd ..'
@@ -171,71 +169,6 @@ alias dv-rm='docker volume rm'
 alias dlf='docker logs -f'
 alias dps='docker container ls'
 alias dpsa='docker container ls -a'
-
-# Projects and other tools.
-alias www-cms='md-edit "$HOME/Code/www/src/content/posts"'
-alias wfe='cd "$HOME/Work/ascend-ai-frontend"'
-alias wbe='cd "$HOME/Work/ascend-ai-backend"'
-alias cfe='cd "$HOME/Crewsum/frontend"'
-alias cbe='cd "$HOME/Crewsum/backend"'
-alias codex='codex --yolo'
-alias claude='claude --dangerously-skip-permissions'
-# Use LM Studio's Windows CLI instead of the Linux AppImage.
-alias lms='command lms'
-alias hd='hunk diff'
-alias tf='terraform'
-alias ssh-rook='ssh 192.168.68.62'
-alias cdm='codium'
-alias dm='docker-manager'
-alias wt='worktree-manager'
-
-# Windows equivalents of the Linux-only aliases.
-_bashrc_pwdc() {
-    # Native Windows tools expect a Windows path; omit the trailing newline.
-    local path
-    path=$(cygpath -w "$PWD") || return
-    printf '%s' "$path" | clip.exe && echo 'Copied pwd to clipboard'
-}
-alias pwdc='_bashrc_pwdc'
-
-alias gs='echo "Ghostscript has been remapped to ghostscript"'
-_bashrc_ghostscript() {
-    local executable
-    for executable in gswin64c gswin32c gs; do
-        if command -v "$executable" >/dev/null 2>&1; then
-            command "$executable" "$@"
-            return
-        fi
-    done
-    printf '%s\n' 'Ghostscript is not installed or is not on PATH.' >&2
-    return 127
-}
-alias ghostscript='_bashrc_ghostscript'
-
-# PostgreSQL installed as a Windows service. Pass its exact service name when
-# more than one version is installed: pg-up postgresql-x64-17
-# Starting/stopping services may require an Administrator terminal.
-_bashrc_postgres() {
-    local action=$1
-    local service=${2:-postgresql*}
-    PG_SERVICE="$service" PG_ACTION="$action" powershell.exe -NoProfile -Command '
-        $ErrorActionPreference = "Stop"
-        try {
-            $services = @(Get-Service -Name $env:PG_SERVICE)
-            if ($services.Count -ne 1) {
-                throw "Specify one PostgreSQL service name; use pg-status to list services."
-            }
-            switch ($env:PG_ACTION) {
-                "start" { $services | Start-Service }
-                "stop"  { $services | Stop-Service }
-            }
-            $services | Get-Service
-        } catch { Write-Error $_; exit 1 }
-    '
-}
-alias pg-up='_bashrc_postgres start'
-alias pg-down='_bashrc_postgres stop'
-alias pg-status='powershell.exe -NoProfile -Command "Get-Service -Name postgresql*"'
 
 # Complete branches/paths for your Git shortcuts, when bundled support exists.
 if declare -F __git_complete >/dev/null; then
