@@ -103,4 +103,7 @@
   "explorer.confirmDragAndDrop": false,
   "intellij.region": "americas",
   "intellij.dataSharing": "none",
+  "[markdown]": {
+    "diffEditor.ignoreTrimWhitespace": true
+  },
 }
